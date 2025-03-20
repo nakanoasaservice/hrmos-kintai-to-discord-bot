@@ -1,4 +1,5 @@
 {
+	"extensions.ignoreRecommendations": false,
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
@@ -8,11 +9,5 @@
 	"files.associations": {
 		".dev.vars": "dotenv"
 	},
-	"cSpell.words": [
-		"hrmos",
-		"kintai",
-		"nakano",
-		"notionhq",
-		"valibot"
-	]
+	"cSpell.words": ["hrmos", "kintai", "nakano", "notionhq", "valibot"]
 }

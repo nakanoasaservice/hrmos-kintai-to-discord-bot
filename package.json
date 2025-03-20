@@ -1,32 +1,33 @@
 {
-  "name": "hrmos-kintai-to-discord-bot",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "test": "vitest",
-    "cf-typegen": "wrangler types",
-    "typegen": "openapi-typescript 'https://ieyasu.co/docs/openapi.json' -o src/lib/api/v1.d.ts"
-  },
-  "dependencies": {
-    "@date-fns/tz": "^1.2.0",
-    "@notionhq/client": "^2.2.15",
-    "date-fns": "^4.1.0",
-    "hono": "^4.6.13",
-    "openapi-fetch": "^0.13.4",
-    "valibot": "1.0.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@cloudflare/vitest-pool-workers": "^0.5.34",
-    "@cloudflare/workers-types": "^4.20250317.0",
-    "discord-api-types": "^0.37.110",
-    "openapi-typescript": "^7.6.1",
-    "type-fest": "^4.33.0",
-    "typescript": "^5.7.2",
-    "vitest": "2.0.5",
-    "wrangler": "^4.2.0"
-  }
+	"name": "hrmos-kintai-to-discord-bot",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types",
+		"typegen": "openapi-typescript 'https://ieyasu.co/docs/openapi.json' -o src/lib/api/v1.d.ts",
+		"check": "biome check --write"
+	},
+	"dependencies": {
+		"@date-fns/tz": "^1.2.0",
+		"@notionhq/client": "^2.2.15",
+		"date-fns": "^4.1.0",
+		"hono": "^4.6.13",
+		"openapi-fetch": "^0.13.4",
+		"valibot": "1.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@cloudflare/vitest-pool-workers": "^0.5.34",
+		"@cloudflare/workers-types": "^4.20250317.0",
+		"discord-api-types": "^0.37.110",
+		"openapi-typescript": "^7.6.1",
+		"type-fest": "^4.33.0",
+		"typescript": "^5.7.2",
+		"vitest": "2.0.5",
+		"wrangler": "^4.2.0"
+	}
 }
