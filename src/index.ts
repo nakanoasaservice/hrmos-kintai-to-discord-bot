@@ -13,7 +13,7 @@ export default {
 	async scheduled(
 		controller: ScheduledController,
 		env: Env,
-		ctx: ExecutionContext,
+		_ctx: ExecutionContext,
 	) {
 		const result = v.safeParse(EnvSchema, env);
 		if (!result.success) {
