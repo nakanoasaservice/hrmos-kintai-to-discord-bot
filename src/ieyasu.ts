@@ -108,7 +108,7 @@ function createAuthMiddleware(
 ): Middleware {
 	const client = originalCreateClient<paths>({ baseUrl });
 
-	let token: TokenResponse | undefined;
+	let token: TokenResponse;
 
 	const middleware: Middleware = {
 		async onRequest({ request }) {
