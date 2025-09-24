@@ -16,19 +16,19 @@
 		"@date-fns/tz": "^1.4.1",
 		"@notionhq/client": "^2.3.0",
 		"date-fns": "^4.1.0",
-		"hono": "^4.9.7",
+		"hono": "^4.9.8",
 		"openapi-fetch": "^0.14.0",
 		"valibot": "1.1.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.4",
-		"@cloudflare/vitest-pool-workers": "^0.9.1",
-		"@cloudflare/workers-types": "^4.20250913.0",
-		"discord-api-types": "^0.38.24",
+		"@cloudflare/vitest-pool-workers": "^0.9.3",
+		"@cloudflare/workers-types": "^4.20250922.0",
+		"discord-api-types": "^0.38.26",
 		"openapi-typescript": "^7.9.1",
 		"type-fest": "^4.41.0",
 		"typescript": "^5.9.2",
 		"vitest": "2.1.9",
-		"wrangler": "^4.37.0"
+		"wrangler": "^4.38.0"
 	}
 }
