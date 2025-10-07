@@ -14,9 +14,7 @@
 	},
 	"dependencies": {
 		"@date-fns/tz": "^1.4.1",
-		"@notionhq/client": "^2.3.0",
 		"date-fns": "^4.1.0",
-		"hono": "^4.9.10",
 		"openapi-fetch": "^0.14.1",
 		"valibot": "1.1.0"
 	},
@@ -24,7 +22,7 @@
 		"@biomejs/biome": "^2.2.5",
 		"@cloudflare/vitest-pool-workers": "^0.9.10",
 		"@cloudflare/workers-types": "^4.20251004.0",
-		"discord-api-types": "^0.38.28",
+		"discord-api-types": "^0.38.29",
 		"openapi-typescript": "^7.9.1",
 		"type-fest": "^4.41.0",
 		"typescript": "^5.9.3",

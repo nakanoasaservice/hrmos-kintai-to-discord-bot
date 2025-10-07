@@ -30,6 +30,10 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "expired_at": "2018-09-23T04:56:07.000+09:00",
+                         *       "token": "Em94Vf961af8gSB2QtTVmGgn"
+                         *     } */
                         "application/json": components["schemas"]["Token"];
                     };
                 };
@@ -79,6 +83,10 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "expired_at": "2018-09-24T04:56:07.000+09:00",
+                         *       "token": "Em94Vf961af8gSB2QtTVmGgn"
+                         *     } */
                         "application/json": components["schemas"]["Token"];
                     };
                 };
@@ -129,6 +137,10 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "expired_at": "2018-09-24T04:56:07.000+09:00",
+                         *       "token": "Em94Vf961af8gSB2QtTVmGgn"
+                         *     } */
                         "application/json": components["schemas"]["Token"];
                     };
                 };
@@ -209,6 +221,58 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "number": "A0001",
+                         *         "full_name": "徳川家康",
+                         *         "month": "202009",
+                         *         "day": "2020-09-01",
+                         *         "wday": "火",
+                         *         "segment_display_title": "稼働",
+                         *         "segment_title": "稼働",
+                         *         "start_at": "08:00",
+                         *         "stamping_start_at": null,
+                         *         "end_at": "23:00",
+                         *         "stamping_end_at": null,
+                         *         "break_1_start_at": "12:00",
+                         *         "stamping_break_1_start_at": null,
+                         *         "break_1_end_at": "13:00",
+                         *         "stamping_break_1_end_at": null,
+                         *         "break_2_start_at": null,
+                         *         "stamping_break_2_start_at": null,
+                         *         "break_2_end_at": null,
+                         *         "stamping_break_2_end_at": null,
+                         *         "procedure_overtime_end_at": null,
+                         *         "total_break_time": "1:00",
+                         *         "time_paid_holiday": "00:00",
+                         *         "total_over_work_time": "6:00",
+                         *         "total_over_work_time_36": "6:00",
+                         *         "total_working_hours": "14:00",
+                         *         "actual_working_hours": "14:00",
+                         *         "hours_in_prescribed_working_hours": "8:00",
+                         *         "hours_in_statutory_working_hours": "0:00",
+                         *         "excess_of_statutory_working_hours": "6:00",
+                         *         "excess_of_statutory_working_hours_in_holidays": "0:00",
+                         *         "hours_in_statutory_working_hours_in_holidays": "0:00",
+                         *         "late_night_overtime_working_hours": "1:00",
+                         *         "status": 1,
+                         *         "expense": 0,
+                         *         "created_at": "2020-08-21T14:12:22.000+09:00",
+                         *         "updated_at": "2020-09-18T12:56:20.000+09:00",
+                         *         "daytime_prescribed_work_time": 28800,
+                         *         "midnight_prescribed_work_time": 0,
+                         *         "daytime_statutory_work_overtime": 0,
+                         *         "midnight_statutory_work_overtime": 0,
+                         *         "daytime_out_statutory_work_time": 18000,
+                         *         "midnight_out_statutory_work_time": 3600,
+                         *         "daytime_out_statutory_holiday_work_time": 0,
+                         *         "midnight_out_statutory_holiday_work_time": 0,
+                         *         "daytime_statutory_holiday_work_time": 0,
+                         *         "midnight_statutory_holiday_work_time": 0,
+                         *         "extra_breaks": [],
+                         *         "paid_holiday_with_time_paid": 0.5
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["WorkOutput"][];
                     };
                 };
@@ -287,6 +351,65 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "user_id": 2,
+                         *         "number": "A0001",
+                         *         "full_name": "徳川家康",
+                         *         "month": "202008",
+                         *         "day": "2020-08-10",
+                         *         "wday": "月",
+                         *         "segment_display_title": "稼働",
+                         *         "segment_title": "稼働",
+                         *         "start_at": null,
+                         *         "next_day_start": 0,
+                         *         "stamping_start_at": null,
+                         *         "end_at": null,
+                         *         "next_day_end": 0,
+                         *         "stamping_end_at": null,
+                         *         "break_1_start_at": "12:00",
+                         *         "next_day_break_1_start": 0,
+                         *         "stamping_break_1_start_at": null,
+                         *         "break_1_end_at": "13:00",
+                         *         "next_day_break_1_end": 0,
+                         *         "stamping_break_1_end_at": null,
+                         *         "break_2_start_at": null,
+                         *         "next_day_break_2_start": 0,
+                         *         "stamping_break_2_start_at": null,
+                         *         "break_2_end_at": null,
+                         *         "next_day_break_2_end": 0,
+                         *         "stamping_break_2_end_at": null,
+                         *         "procedure_overtime_end_at": null,
+                         *         "total_break_time": "0:00",
+                         *         "time_paid_holiday": "00:00",
+                         *         "total_over_work_time": "0:00",
+                         *         "total_over_work_time_36": "0:00",
+                         *         "total_working_hours": "0:00",
+                         *         "actual_working_hours": "0:00",
+                         *         "hours_in_prescribed_working_hours": "0:00",
+                         *         "hours_in_statutory_working_hours": "0:00",
+                         *         "excess_of_statutory_working_hours": "0:00",
+                         *         "excess_of_statutory_working_hours_in_holidays": "0:00",
+                         *         "hours_in_statutory_working_hours_in_holidays": "0:00",
+                         *         "late_night_overtime_working_hours": "0:00",
+                         *         "status": 1,
+                         *         "expense": 0,
+                         *         "created_at": "2020-08-21T14:11:05.000+09:00",
+                         *         "updated_at": "2020-08-21T14:11:05.000+09:00",
+                         *         "daytime_prescribed_work_time": 0,
+                         *         "midnight_prescribed_work_time": 0,
+                         *         "daytime_statutory_work_overtime": 0,
+                         *         "midnight_statutory_work_overtime": 0,
+                         *         "daytime_out_statutory_work_time": 0,
+                         *         "midnight_out_statutory_work_time": 0,
+                         *         "daytime_out_statutory_holiday_work_time": 0,
+                         *         "midnight_out_statutory_holiday_work_time": 0,
+                         *         "daytime_statutory_holiday_work_time": 0,
+                         *         "midnight_statutory_holiday_work_time": 0,
+                         *         "extra_breaks": [],
+                         *         "paid_holiday_with_time_paid": 0.5
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["WorkOutput"][];
                     };
                 };
@@ -370,6 +493,21 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "number": "A0001",
+                         *         "full_name": "徳川家康",
+                         *         "month": "202009",
+                         *         "day": "2020-09-01",
+                         *         "wday": "火",
+                         *         "first_start_at": "09:00",
+                         *         "first_end_at": "18:00",
+                         *         "second_start_at": "08:55",
+                         *         "second_end_at": "18:10",
+                         *         "start_at_diff": "00:05",
+                         *         "end_at_diff": "00:10"
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["WorkOutputDiff"][];
                     };
                 };
@@ -448,6 +586,22 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "user_id": 2,
+                         *         "number": "A0001",
+                         *         "full_name": "徳川家康",
+                         *         "month": "202008",
+                         *         "day": "2020-08-10",
+                         *         "wday": "月",
+                         *         "first_start_at": "09:00",
+                         *         "first_end_at": "18:00",
+                         *         "second_start_at": "08:55",
+                         *         "second_end_at": "18:10",
+                         *         "start_at_diff": "00:05",
+                         *         "end_at_diff": "00:10"
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["WorkOutputDiff"][];
                     };
                 };
@@ -536,6 +690,25 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "user_id": 2,
+                         *         "number": "A0001",
+                         *         "full_name": "徳川家康",
+                         *         "month": "202407",
+                         *         "weekday_time1": "20:00",
+                         *         "weekday_time2": "20:00",
+                         *         "weekday_time3": "20:00",
+                         *         "weekday_time4": "20:00",
+                         *         "weekday_time5": "10:00",
+                         *         "holiday_time1": "10:00",
+                         *         "holiday_time2": "10:00",
+                         *         "holiday_time3": "10:00",
+                         *         "holiday_time4": "",
+                         *         "holiday_time5": "",
+                         *         "total_working_hours": "120:00"
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["WorkOutputMonthOriginalAggregate"][];
                     };
                 };
@@ -624,6 +797,37 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "user_id": 2,
+                         *         "number": "A0001",
+                         *         "full_name": "徳川家康",
+                         *         "month": "202407",
+                         *         "day": "2024-07-01",
+                         *         "wday": "月",
+                         *         "segment_display_title": "出勤",
+                         *         "segment_title": "出勤:残業あり",
+                         *         "start_at": "09:00",
+                         *         "start_at_prev_next_day": "0",
+                         *         "stamping_start_at": null,
+                         *         "stamping_start_at_prev_next_day": null,
+                         *         "end_at": "18:00",
+                         *         "end_at_prev_next_day": "0",
+                         *         "stamping_end_at": null,
+                         *         "stamping_end_at_prev_next_day": null,
+                         *         "weekday_time1": "2:00",
+                         *         "weekday_time2": "2:00",
+                         *         "weekday_time3": "1:00",
+                         *         "weekday_time4": "1:30",
+                         *         "weekday_time5": "1:30",
+                         *         "holiday_time1": "",
+                         *         "holiday_time2": "",
+                         *         "holiday_time3": "",
+                         *         "holiday_time4": "",
+                         *         "holiday_time5": "",
+                         *         "total_working_hours": "8:00"
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["WorkOutputOriginalAggregate"][];
                     };
                 };
@@ -744,6 +948,56 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "number": "A0001",
+                         *       "full_name": "徳川家康",
+                         *       "month": "202009",
+                         *       "day": "2020-09-01",
+                         *       "wday": "火",
+                         *       "segment_display_title": "稼働",
+                         *       "segment_title": "稼働",
+                         *       "start_at": "08:00",
+                         *       "stamping_start_at": null,
+                         *       "end_at": "23:00",
+                         *       "stamping_end_at": null,
+                         *       "break_1_start_at": "12:00",
+                         *       "stamping_break_1_start_at": null,
+                         *       "break_1_end_at": "13:00",
+                         *       "stamping_break_1_end_at": null,
+                         *       "break_2_start_at": "19:00",
+                         *       "stamping_break_2_start_at": null,
+                         *       "break_2_end_at": "19:30",
+                         *       "stamping_break_2_end_at": null,
+                         *       "procedure_overtime_end_at": null,
+                         *       "total_break_time": "1:30",
+                         *       "time_paid_holiday": "00:00",
+                         *       "total_over_work_time": "6:00",
+                         *       "total_over_work_time_36": "6:00",
+                         *       "total_working_hours": "14:00",
+                         *       "actual_working_hours": "14:00",
+                         *       "hours_in_prescribed_working_hours": "8:00",
+                         *       "hours_in_statutory_working_hours": "0:00",
+                         *       "excess_of_statutory_working_hours": "5:30",
+                         *       "excess_of_statutory_working_hours_in_holidays": "0:00",
+                         *       "hours_in_statutory_working_hours_in_holidays": "0:00",
+                         *       "late_night_overtime_working_hours": "1:00",
+                         *       "status": 1,
+                         *       "expense": 0,
+                         *       "created_at": "2020-08-21T14:12:22.000+09:00",
+                         *       "updated_at": "2020-09-18T12:56:20.000+09:00",
+                         *       "daytime_prescribed_work_time": 28800,
+                         *       "midnight_prescribed_work_time": 0,
+                         *       "daytime_statutory_work_overtime": 0,
+                         *       "midnight_statutory_work_overtime": 0,
+                         *       "daytime_out_statutory_work_time": 18000,
+                         *       "midnight_out_statutory_work_time": 3600,
+                         *       "daytime_out_statutory_holiday_work_time": 0,
+                         *       "midnight_out_statutory_holiday_work_time": 0,
+                         *       "daytime_statutory_holiday_work_time": 0,
+                         *       "midnight_statutory_holiday_work_time": 0,
+                         *       "extra_breaks": [],
+                         *       "paid_holiday_with_time_paid": 0.5
+                         *     } */
                         "application/json": components["schemas"]["WorkOutput"];
                     };
                 };
@@ -814,6 +1068,22 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "user_id": 2,
+                         *       "number": "A0001",
+                         *       "full_name": "徳川家康",
+                         *       "month": "202008",
+                         *       "day": "2020-08-10",
+                         *       "wday": "月",
+                         *       "start_at": "09:00",
+                         *       "end_at": "18:00",
+                         *       "stamping_start_at": "09:00",
+                         *       "stamping_end_at": "18:00",
+                         *       "other_start_at": "08:55",
+                         *       "other_end_at": "18:10",
+                         *       "start_at_diff": "00:05",
+                         *       "end_at_diff": "00:10"
+                         *     } */
                         "application/json": components["schemas"]["WorkOtherSystem"];
                     };
                 };
@@ -884,6 +1154,37 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "title": "出勤",
+                         *         "display_title": "出勤",
+                         *         "status": 1,
+                         *         "start_at": "09:00:00",
+                         *         "next_day_start": null,
+                         *         "end_at": "18:00:00",
+                         *         "next_day_end": null,
+                         *         "break_1_start_at": "12:00:00",
+                         *         "next_day_break_1_start": 0,
+                         *         "break_1_end_at": "13:00:00",
+                         *         "next_day_break_1_end": 0,
+                         *         "break_2_start_at": null,
+                         *         "next_day_break_2_start": 0,
+                         *         "break_2_end_at": null,
+                         *         "next_day_break_2_end": 0,
+                         *         "midnight_start_at": "22:00:00",
+                         *         "next_day_midnight_start": 0,
+                         *         "midnight_end_at": "05:00:00",
+                         *         "next_day_midnight_end": 0,
+                         *         "predetermined_time": "08:00:00",
+                         *         "considered_at": null,
+                         *         "considered_start_at": null,
+                         *         "next_day_considered_start": null,
+                         *         "shift": 0,
+                         *         "shift_color_id": null,
+                         *         "notes": "備考",
+                         *         "sequence": 1
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["Segment"][];
                     };
                 };
@@ -956,6 +1257,28 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "number": "A0001",
+                         *         "updated_at": "1616-04-17T00:00:00.000+09:00",
+                         *         "last_name": "徳川",
+                         *         "last_name_kana": "トクガワ",
+                         *         "created_at": "1542-12-26T00:00:00.000+09:00",
+                         *         "cutoff_date": 25,
+                         *         "id": 3,
+                         *         "nfc_tag_pc": "A0001",
+                         *         "first_name": "家康",
+                         *         "first_name_kana": "イエヤス",
+                         *         "start_date": "1603-02-12",
+                         *         "comment": "コメント",
+                         *         "lodgment_id": 1,
+                         *         "agreement36_id": 1,
+                         *         "department_id": 1,
+                         *         "employment_id": 1,
+                         *         "segment": "1,2,5,6",
+                         *         "default_segment_id": 1
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["User"][];
                     };
                 };
@@ -1043,6 +1366,11 @@ export interface paths {
                      * @example 1
                      */
                     lodgment_id?: number;
+                    /**
+                     * @description 36協定ID (未指定の場合は システム管理＞勤怠設定＞36協定タブ で表示されている最初の36協定が自動的に設定されます)
+                     * @example 1
+                     */
+                    agreement36_id?: number;
                     /**
                      * @description 部門ID
                      * @example 1
@@ -1171,6 +1499,26 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 3,
+                         *       "number": "A0001",
+                         *       "last_name": "徳川",
+                         *       "first_name": "家康",
+                         *       "first_name_kana": "イエヤス",
+                         *       "last_name_kana": "トクガワ",
+                         *       "email": "メールアドレス",
+                         *       "cutoff_date": 25,
+                         *       "nfc_tag_pc": "nfc_tag_for_pc",
+                         *       "start_date": "1603-02-12",
+                         *       "end_date": "1616-06-01",
+                         *       "comment": "コメント",
+                         *       "lodgment_id": 1,
+                         *       "agreement36_id": 1,
+                         *       "employment_id": 1,
+                         *       "department_id": 1,
+                         *       "segment": "1,2,5,6",
+                         *       "default_segment_id": 1
+                         *     } */
                         "application/json": components["schemas"]["User"];
                     };
                 };
@@ -1257,6 +1605,98 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "user_id": 2,
+                         *         "number": "A0001",
+                         *         "month": "202009",
+                         *         "prescribed_working_hours": "160:00",
+                         *         "hours_in_prescribed_working_hours": "15:00",
+                         *         "hours_in_statutory_working_hours": "1:00",
+                         *         "excess_of_statutory_working_hours": "10:00",
+                         *         "excess_of_statutory_working_hours_in_holidays": "0:00",
+                         *         "working_hours_in_statutory_holidays": "0:00",
+                         *         "late_night_overtime_working_hours": "2:00",
+                         *         "total_working_hours": "26:00",
+                         *         "actual_working_hours": "26:00",
+                         *         "total_late_hours": "1:00",
+                         *         "total_leave_early_hours": "0:00",
+                         *         "lack_prescribed_work_time": "0:00",
+                         *         "over_work_time": "11:00",
+                         *         "over_work_time_36": "10:00",
+                         *         "prescribed_working_days": "20.0",
+                         *         "working_days": "29.0",
+                         *         "working_days_in_non_statutory_holidays": "0.0",
+                         *         "working_days_in_statutory_holidays": "0.0",
+                         *         "absence_days": "0.0",
+                         *         "tardy_days": "1.0",
+                         *         "learve_early_days": "0.0",
+                         *         "public_holidays": "1.0",
+                         *         "paid_holidays": "0.0",
+                         *         "remain_paid_holidays": "4.0",
+                         *         "expense": "0",
+                         *         "created_at": "2020-08-19T15:31:16.000+09:00",
+                         *         "updated_at": "2020-09-18T12:57:16.000+09:00",
+                         *         "daytime_prescribed_work_time": "15:00",
+                         *         "midnight_prescribed_work_time": "0:00",
+                         *         "daytime_statutory_work_overtime": "1:00",
+                         *         "midnight_statutory_work_overtime": "0:00",
+                         *         "daytime_out_statutory_work_time": "8:00",
+                         *         "midnight_out_statutory_work_time": "2:00",
+                         *         "daytime_out_statutory_holiday_work_time": "0:00",
+                         *         "midnight_out_statutory_holiday_work_time": "0:00",
+                         *         "daytime_statutory_holiday_work_time": "0:00",
+                         *         "midnight_statutory_holiday_work_time": "0:00",
+                         *         "paid_holiday_with_time_paid": 0.5,
+                         *         "discretion": {
+                         *           "considereds_time": "0:00",
+                         *           "excess_of_statutory_working_hours_in_holidays": "0:00",
+                         *           "working_hours_in_statutory_holidays": "0:00",
+                         *           "discretion_time": "0:00"
+                         *         },
+                         *         "flex": {
+                         *           "total_working_hours": "26:00",
+                         *           "prescribed_working_hours": "26:00",
+                         *           "statutory_time": "160:00",
+                         *           "working_hours_in_statutory_holidays": "0:00",
+                         *           "to_today_total_work_time": "10:00",
+                         *           "to_today_total_work_time_36": "10:00",
+                         *           "to_today_prescribed_time": "10:00",
+                         *           "to_today_statutory_holiday_work_time": "0:00",
+                         *           "to_today_statutory_overtime": "0:00",
+                         *           "to_today_out_statutory_overtime": "0:00",
+                         *           "to_today_overtime_36": "0:00",
+                         *           "to_today_jikangai_under_45": "0:00",
+                         *           "to_today_jikangai_45_to_60": "0:00",
+                         *           "to_today_jikangai_over_60": "0:00",
+                         *           "to_today_overtime": "0:00",
+                         *           "to_today_lack_prescribed_work_time": "0:00",
+                         *           "to_today_lack_statutory_work_time": "0:00",
+                         *           "settlement_period_overtime": "0:00",
+                         *           "settlement_period_lack_prescribed_work_time": "0:00",
+                         *           "settlement_period_lack_statutory_work_time": "0:00"
+                         *         },
+                         *         "variable": {
+                         *           "total_working_hours": "26:00",
+                         *           "in_statutory_work_time": "0:00",
+                         *           "statutory_time": "160:00",
+                         *           "prescribed_time": "160:00",
+                         *           "working_hours_in_statutory_holidays": "0:00",
+                         *           "over_prescribed_work_time": "0:00",
+                         *           "over_statutory_work_time": "0:00",
+                         *           "variable_jikangai_under_45": "0:00",
+                         *           "variable_jikangai_45_to_60": "0:00",
+                         *           "variable_jikangai_over_60": "0:00",
+                         *           "variable_period_total_working_hours": "0:00",
+                         *           "variable_period_in_statutory_work_time": "0:00",
+                         *           "variable_period_statutory_work_time": "0:00",
+                         *           "variable_period_prescribed_time": "0:00",
+                         *           "variable_period_working_hours_in_statutory_holidays": "0:00",
+                         *           "variable_period_over_prescribed_work_time": "0:00",
+                         *           "variable_period_over_statutory_work_time": "0:00"
+                         *         }
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["WorkOutputMonth"][];
                     };
                 };
@@ -1322,7 +1762,7 @@ export interface paths {
                     longitude?: number;
                     /**
                      * @description 住所
-                     * @example 東京都港区北青山3-5-6
+                     * @example 東京都渋谷区渋谷2-15-1
                      */
                     address?: string;
                     /**
@@ -1343,6 +1783,17 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "user_id": 2,
+                         *       "stamp_type": 2,
+                         *       "created_at": "2020-10-28T09:00:00.000+09:00",
+                         *       "latitude": 34.6431,
+                         *       "longitude": 131.9972,
+                         *       "address": "東京都渋谷区渋谷2-15-1",
+                         *       "user_agent": "curl/7.54.0",
+                         *       "lodgment_id": 1,
+                         *       "stamp_lodgment_id": 1
+                         *     } */
                         "application/json": components["schemas"]["StampLog"];
                     };
                 };
@@ -1419,6 +1870,19 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "user_id": 2,
+                         *         "stamp_type": 2,
+                         *         "created_at": "2020-10-28T09:00:00.000+09:00",
+                         *         "latitude": 34.6431,
+                         *         "longitude": 131.9972,
+                         *         "address": "東京都渋谷区渋谷2-15-1",
+                         *         "user_agent": "curl/7.54.0",
+                         *         "lodgment_id": 1,
+                         *         "stamp_lodgment_id": 1
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["StampLog"][];
                     };
                 };
@@ -1502,6 +1966,19 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "user_id": 2,
+                         *         "stamp_type": 2,
+                         *         "created_at": "2020-10-28T09:00:00.000+09:00",
+                         *         "latitude": 34.6431,
+                         *         "longitude": 131.9972,
+                         *         "address": "東京都渋谷区渋谷2-15-1",
+                         *         "user_agent": "curl/7.54.0",
+                         *         "lodgment_id": 1,
+                         *         "stamp_lodgment_id": 1
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["StampLog"][];
                     };
                 };
@@ -1579,6 +2056,25 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "name": "原宿",
+                         *         "sequence": 1,
+                         *         "segments": [
+                         *           1,
+                         *           2,
+                         *           3
+                         *         ],
+                         *         "ip_addresses": [
+                         *           "192.168.0.1",
+                         *           "192.168.0.2"
+                         *         ],
+                         *         "address": "渋谷区渋谷2-15-1",
+                         *         "prefectural_id": 13,
+                         *         "created_at": "2020-10-28T09:00:00.000+09:00",
+                         *         "updated_at": "2020-10-28T09:00:00.000+09:00"
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["Lodgment"][];
                     };
                 };
@@ -1651,6 +2147,12 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "id": 1,
+                         *         "name": "沖縄県"
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["Prefectural"][];
                     };
                 };
@@ -1723,6 +2225,13 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "id": 1,
+                         *         "name": "営業部",
+                         *         "sequence": 1
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["Department"][];
                     };
                 };
@@ -1795,6 +2304,13 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "id": 1,
+                         *         "name": "一般社員",
+                         *         "sequence": 1
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["Employment"][];
                     };
                 };
@@ -1867,6 +2383,13 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "id": 1,
+                         *         "name": "一般社員",
+                         *         "sequence": 1
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["PaidHoliday"][];
                     };
                 };
@@ -1953,6 +2476,24 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "user_id": 100,
+                         *         "date": "2021-06-01",
+                         *         "leftover_days": 3,
+                         *         "leftover_hours": 10,
+                         *         "received_days": 3,
+                         *         "received_hours": 10,
+                         *         "taken_days": 3,
+                         *         "taken_hours": 10,
+                         *         "expired_days": 3,
+                         *         "expired_hours": 10,
+                         *         "adjusted_days": 3,
+                         *         "adjusted_hours": 10,
+                         *         "remaining_days": 3,
+                         *         "remaining_hours": 10
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["PaidHolidayHistory"][];
                     };
                 };
@@ -2035,6 +2576,94 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "business_partner_id": 1,
+                         *         "user_id": 2,
+                         *         "contract_number": "K0002",
+                         *         "contract_category": "contract",
+                         *         "partner_number": "B0001",
+                         *         "postal_code": "123-4567",
+                         *         "prefectural_id": 1,
+                         *         "city": "市区町村",
+                         *         "building": "建物名",
+                         *         "branch": "部門",
+                         *         "appointment": "役職",
+                         *         "person": "請求担当者",
+                         *         "contract_notes": "契約備考\nAPI経由\n月間稼働時間のみ\n月単価（超過・控除単価あり）",
+                         *         "start_at": "2022-10-19",
+                         *         "end_at": "2023-10-18",
+                         *         "work_type": 1,
+                         *         "pay_type": 1,
+                         *         "hourly_price": null,
+                         *         "monthly_price": 1000000,
+                         *         "late_night_price": null,
+                         *         "overtime_price": null,
+                         *         "overtime_late_night_price": null,
+                         *         "over_60_hour_price": null,
+                         *         "over_60_hour_late_night_price": null,
+                         *         "holiday_1_price": null,
+                         *         "holiday_1_late_night_price": null,
+                         *         "holiday_2_price": null,
+                         *         "holiday_2_late_night_price": null,
+                         *         "min_hour": 100,
+                         *         "max_hour": 140,
+                         *         "surplus": 10000,
+                         *         "surplus_fractional_price": 1,
+                         *         "surplus_fractional": 2,
+                         *         "deduction": 9000,
+                         *         "deduction_fractional_price": 1,
+                         *         "deduction_fractional": 1,
+                         *         "cutoff_date": 31,
+                         *         "pay_cycle": 1,
+                         *         "pay_date": 31,
+                         *         "fractional_total": 2,
+                         *         "fractional_minute_total": 5,
+                         *         "fractional_start_at": 2,
+                         *         "fractional_minute_start_at": 10,
+                         *         "fractional_end_at": 1,
+                         *         "fractional_minute_end_at": 15,
+                         *         "fractional": 1,
+                         *         "fractional_minute": 5,
+                         *         "subject": "請求書件名",
+                         *         "show_year_month": true,
+                         *         "show_work_time": true,
+                         *         "memo": "請求書メモ",
+                         *         "deal_purchase": {
+                         *           "partner_number": "1",
+                         *           "postal_code": "123-4567",
+                         *           "prefectural_id": 1,
+                         *           "city": "東京都渋谷区渋谷２丁目１５−１",
+                         *           "building": "渋谷クロスタワー 12F",
+                         *           "branch": "開発部",
+                         *           "appointment": "CEO",
+                         *           "person": "徳川家康",
+                         *           "pay_type": 0,
+                         *           "monthly_price": 500000,
+                         *           "min_hour": 120,
+                         *           "max_hour": 140,
+                         *           "surplus": 9000,
+                         *           "surplus_fractional_price": 1,
+                         *           "surplus_fractional": 0,
+                         *           "deduction": 9000,
+                         *           "deduction_fractional_price": 1,
+                         *           "deduction_fractional": 0,
+                         *           "fractional_total": 1,
+                         *           "fractional_minute_total": 5,
+                         *           "fractional_start_at": 1,
+                         *           "fractional_minute_start_at": 5,
+                         *           "fractional_end_at": 1,
+                         *           "fractional_minute_end_at": 5,
+                         *           "fractional": 2,
+                         *           "fractional_minute": 5,
+                         *           "subject": "請求書件名",
+                         *           "show_year_month": true,
+                         *           "show_work_time": false,
+                         *           "memo": "備考"
+                         *         },
+                         *         "user_approvers": []
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["DealContract"][];
                     };
                 };
@@ -2074,6 +2703,92 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 1,
+                         *       "business_partner_id": 1,
+                         *       "user_id": 2,
+                         *       "contract_number": "K0002",
+                         *       "contract_category": "contract",
+                         *       "partner_number": "B0001",
+                         *       "postal_code": "123-4567",
+                         *       "prefectural_id": 1,
+                         *       "city": "市区町村",
+                         *       "building": "建物名",
+                         *       "branch": "部門",
+                         *       "appointment": "役職",
+                         *       "person": "請求担当者",
+                         *       "contract_notes": "契約備考\nAPI経由\n月間稼働時間のみ\n月単価（超過・控除単価あり）",
+                         *       "start_at": "2022-10-19",
+                         *       "end_at": "2023-10-18",
+                         *       "work_type": 1,
+                         *       "pay_type": 1,
+                         *       "hourly_price": null,
+                         *       "monthly_price": 1000000,
+                         *       "late_night_price": null,
+                         *       "overtime_price": null,
+                         *       "overtime_late_night_price": null,
+                         *       "over_60_hour_price": null,
+                         *       "over_60_hour_late_night_price": null,
+                         *       "holiday_1_price": null,
+                         *       "holiday_1_late_night_price": null,
+                         *       "holiday_2_price": null,
+                         *       "holiday_2_late_night_price": null,
+                         *       "min_hour": 100,
+                         *       "max_hour": 140,
+                         *       "surplus": 10000,
+                         *       "surplus_fractional_price": 1,
+                         *       "surplus_fractional": 2,
+                         *       "deduction": 9000,
+                         *       "deduction_fractional_price": 1,
+                         *       "deduction_fractional": 1,
+                         *       "cutoff_date": 31,
+                         *       "pay_cycle": 1,
+                         *       "pay_date": 31,
+                         *       "fractional_total": 2,
+                         *       "fractional_minute_total": 5,
+                         *       "fractional_start_at": 2,
+                         *       "fractional_minute_start_at": 10,
+                         *       "fractional_end_at": 1,
+                         *       "fractional_minute_end_at": 15,
+                         *       "fractional": 1,
+                         *       "fractional_minute": 5,
+                         *       "subject": "請求書件名",
+                         *       "show_year_month": true,
+                         *       "show_work_time": true,
+                         *       "memo": "請求書メモ",
+                         *       "deal_purchase": {
+                         *         "partner_number": "1",
+                         *         "postal_code": "123-4567",
+                         *         "prefectural_id": 1,
+                         *         "city": "東京都渋谷区渋谷２丁目１５−１",
+                         *         "building": "渋谷クロスタワー 12F",
+                         *         "branch": "開発部",
+                         *         "appointment": "CEO",
+                         *         "person": "徳川家康",
+                         *         "pay_type": 0,
+                         *         "monthly_price": 500000,
+                         *         "min_hour": 120,
+                         *         "max_hour": 140,
+                         *         "surplus": 9000,
+                         *         "surplus_fractional_price": 1,
+                         *         "surplus_fractional": 0,
+                         *         "deduction": 9000,
+                         *         "deduction_fractional_price": 1,
+                         *         "deduction_fractional": 0,
+                         *         "fractional_total": 1,
+                         *         "fractional_minute_total": 5,
+                         *         "fractional_start_at": 1,
+                         *         "fractional_minute_start_at": 5,
+                         *         "fractional_end_at": 1,
+                         *         "fractional_minute_end_at": 5,
+                         *         "fractional": 2,
+                         *         "fractional_minute": 5,
+                         *         "subject": "請求書件名",
+                         *         "show_year_month": true,
+                         *         "show_work_time": false,
+                         *         "memo": "備考"
+                         *       }
+                         *     } */
                         "application/json": components["schemas"]["DealContract"];
                     };
                 };
@@ -2132,6 +2847,60 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 1,
+                         *       "business_partner_id": 1,
+                         *       "user_id": 2,
+                         *       "contract_number": "K0002",
+                         *       "contract_category": "contract",
+                         *       "partner_number": "B0001",
+                         *       "postal_code": "123-4567",
+                         *       "prefectural_id": 1,
+                         *       "city": "市区町村",
+                         *       "building": "建物名",
+                         *       "branch": "部門",
+                         *       "appointment": "役職",
+                         *       "person": "請求担当者",
+                         *       "contract_notes": "契約備考\nAPI経由\n月間稼働時間のみ\n月単価（超過・控除単価あり）",
+                         *       "start_at": "2022-10-19",
+                         *       "end_at": "2023-10-18",
+                         *       "work_type": 1,
+                         *       "pay_type": 1,
+                         *       "hourly_price": null,
+                         *       "monthly_price": 1000000,
+                         *       "late_night_price": null,
+                         *       "overtime_price": null,
+                         *       "overtime_late_night_price": null,
+                         *       "over_60_hour_price": null,
+                         *       "over_60_hour_late_night_price": null,
+                         *       "holiday_1_price": null,
+                         *       "holiday_1_late_night_price": null,
+                         *       "holiday_2_price": null,
+                         *       "holiday_2_late_night_price": null,
+                         *       "min_hour": 100,
+                         *       "max_hour": 140,
+                         *       "surplus": 10000,
+                         *       "surplus_fractional_price": 1,
+                         *       "surplus_fractional": 2,
+                         *       "deduction": 9000,
+                         *       "deduction_fractional_price": 1,
+                         *       "deduction_fractional": 1,
+                         *       "cutoff_date": 31,
+                         *       "pay_cycle": 1,
+                         *       "pay_date": 31,
+                         *       "fractional_total": 2,
+                         *       "fractional_minute_total": 5,
+                         *       "fractional_start_at": 2,
+                         *       "fractional_minute_start_at": 10,
+                         *       "fractional_end_at": 1,
+                         *       "fractional_minute_end_at": 15,
+                         *       "fractional": 1,
+                         *       "fractional_minute": 5,
+                         *       "subject": "請求書件名",
+                         *       "show_year_month": true,
+                         *       "show_work_time": true,
+                         *       "memo": "請求書メモ"
+                         *     } */
                         "application/json": components["schemas"]["DealContract"];
                     };
                 };
@@ -2172,6 +2941,60 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 1,
+                         *       "business_partner_id": 1,
+                         *       "user_id": 2,
+                         *       "contract_number": "K0002",
+                         *       "contract_category": "contract",
+                         *       "partner_number": "B0001",
+                         *       "postal_code": "123-4567",
+                         *       "prefectural_id": 1,
+                         *       "city": "市区町村",
+                         *       "building": "建物名",
+                         *       "branch": "部門",
+                         *       "appointment": "役職",
+                         *       "person": "請求担当者",
+                         *       "contract_notes": "契約備考\nAPI経由\n月間稼働時間のみ\n月単価（超過・控除単価あり）",
+                         *       "start_at": "2022-10-19",
+                         *       "end_at": "2023-10-18",
+                         *       "work_type": 1,
+                         *       "pay_type": 1,
+                         *       "hourly_price": null,
+                         *       "monthly_price": 1000000,
+                         *       "late_night_price": null,
+                         *       "overtime_price": null,
+                         *       "overtime_late_night_price": null,
+                         *       "over_60_hour_price": null,
+                         *       "over_60_hour_late_night_price": null,
+                         *       "holiday_1_price": null,
+                         *       "holiday_1_late_night_price": null,
+                         *       "holiday_2_price": null,
+                         *       "holiday_2_late_night_price": null,
+                         *       "min_hour": 100,
+                         *       "max_hour": 140,
+                         *       "surplus": 10000,
+                         *       "surplus_fractional_price": 1,
+                         *       "surplus_fractional": 2,
+                         *       "deduction": 9000,
+                         *       "deduction_fractional_price": 1,
+                         *       "deduction_fractional": 1,
+                         *       "cutoff_date": 31,
+                         *       "pay_cycle": 1,
+                         *       "pay_date": 31,
+                         *       "fractional_total": 2,
+                         *       "fractional_minute_total": 5,
+                         *       "fractional_start_at": 2,
+                         *       "fractional_minute_start_at": 10,
+                         *       "fractional_end_at": 1,
+                         *       "fractional_minute_end_at": 15,
+                         *       "fractional": 1,
+                         *       "fractional_minute": 5,
+                         *       "subject": "請求書件名",
+                         *       "show_year_month": true,
+                         *       "show_work_time": true,
+                         *       "memo": "請求書メモ"
+                         *     } */
                         "application/json": components["schemas"]["DealContract"];
                     };
                 };
@@ -2248,6 +3071,147 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "id": 1,
+                         *         "last_name": null,
+                         *         "first_name": null,
+                         *         "last_name_kana": null,
+                         *         "first_name_kana": null,
+                         *         "lodgment_id": null,
+                         *         "configuration": 1,
+                         *         "configuration_label": 1,
+                         *         "name": "ieyasu",
+                         *         "name_kana": "イエヤス",
+                         *         "partner_number": "",
+                         *         "invoice_code": "",
+                         *         "postal_code": "",
+                         *         "prefectural_id": null,
+                         *         "city": "",
+                         *         "building": "",
+                         *         "branch": "",
+                         *         "appointment": "",
+                         *         "person": "",
+                         *         "tel": "",
+                         *         "email": "",
+                         *         "cc_email": "",
+                         *         "fractional_total": 0,
+                         *         "fractional_minute_total": null,
+                         *         "fractional_start_at": 0,
+                         *         "fractional_minute_start_at": null,
+                         *         "fractional_end_at": 0,
+                         *         "fractional_minute_end_at": null,
+                         *         "invoice_create": 1,
+                         *         "fractional": 0,
+                         *         "fractional_minute": null,
+                         *         "cutoff_date": 31,
+                         *         "pay_cycle": 1,
+                         *         "pay_date": 31,
+                         *         "deal_document_purchases": [
+                         *           "purchase",
+                         *           "work",
+                         *           "expense"
+                         *         ],
+                         *         "purchase_tax_type": "excluded",
+                         *         "purchase_withholding": false,
+                         *         "purchase_subject": "",
+                         *         "purchase_show_year_month": false,
+                         *         "purchase_show_work_time": false,
+                         *         "purchase_main": "基本業務",
+                         *         "purchase_deduction": "控除時間",
+                         *         "purchase_surplus": "超過時間",
+                         *         "purchase_username_view": true,
+                         *         "purchase_monthly_only_one": "基本業務",
+                         *         "purchase_monthly_only_one_username_view": true,
+                         *         "purchase_hourly_main": "時間内",
+                         *         "purchase_late_night": "時間内 深夜",
+                         *         "purchase_overtime": "時間外",
+                         *         "purchase_overtime_late_night": "時間外 深夜",
+                         *         "purchase_over_60_hour": "時間外 60時間超過",
+                         *         "purchase_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *         "purchase_holiday_1": "法定外休日",
+                         *         "purchase_holiday_1_late_night": "法定外休日 深夜",
+                         *         "purchase_holiday_2": "法定休日",
+                         *         "purchase_holiday_2_late_night": "法定休日 深夜",
+                         *         "purchase_hourly_username_view": true,
+                         *         "purchase_hourly_only_one": "時間単価",
+                         *         "purchase_hourly_only_one_username_view": true,
+                         *         "bank_account": "",
+                         *         "purchase_notes": "",
+                         *         "purchase_memo": "",
+                         *         "purchase_mail_subject": "【指定月】分支払通知書送付 ご案内",
+                         *         "purchase_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分の支払通知書を送付いたしますので、ご査収の程よろしくお願いいたします。\r\n\r\n支払通知書・作業報告書は、以下のURLよりダウンロードできます。（有効期間は本日より40日間）\r\n有効期間を過ぎてしまった場合は、メールの再配信を依頼してください。\r\n\r\n【ダウンロードURL】\r\n",
+                         *         "deal_document_invoices": [
+                         *           "invoice"
+                         *         ],
+                         *         "deal_document_totals": [
+                         *           "invoice"
+                         *         ],
+                         *         "subject": "",
+                         *         "show_year_month": false,
+                         *         "show_work_time": false,
+                         *         "invoice_main": "基本業務",
+                         *         "invoice_deduction": "控除時間",
+                         *         "invoice_surplus": "超過時間",
+                         *         "invoice_username_view": true,
+                         *         "invoice_monthly_only_one": "基本業務",
+                         *         "invoice_monthly_only_one_username_view": true,
+                         *         "invoice_hourly_main": "時間内",
+                         *         "invoice_late_night": "時間内 深夜",
+                         *         "invoice_overtime": "時間外",
+                         *         "invoice_overtime_late_night": "時間外 深夜",
+                         *         "invoice_over_60_hour": "時間外 60時間超過",
+                         *         "invoice_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *         "invoice_holiday_1": "法定外休日",
+                         *         "invoice_holiday_1_late_night": "法定外休日 深夜",
+                         *         "invoice_holiday_2": "法定休日",
+                         *         "invoice_holiday_2_late_night": "法定休日 深夜",
+                         *         "invoice_hourly_username_view": true,
+                         *         "invoice_hourly_only_one": "時間単価",
+                         *         "invoice_hourly_only_one_username_view": true,
+                         *         "invoice_bank_account": "",
+                         *         "invoice_notes": "",
+                         *         "invoice_memo": "",
+                         *         "mail_subject": "【指定月】分請求書送付 ご案内",
+                         *         "mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分の請求書を送付いたしますので、ご査収の程よろしくお願いいたします。\r\n\r\n請求書・作業報告書は、以下のURLよりダウンロードできます。（有効期間は本日より40日間）\r\n有効期間を過ぎてしまった場合は、メールの再配信を依頼してください。\r\n\r\n【ダウンロードURL】\r\n",
+                         *         "purchase_issue_document": "purchase_invoice",
+                         *         "deal_document_purchase_invoices": [
+                         *           "purchase_invoice",
+                         *           "work"
+                         *         ],
+                         *         "purchase_invoice_tax_type": "excluded",
+                         *         "purchase_invoice_withholding": false,
+                         *         "purchase_invoice_subject": "",
+                         *         "purchase_invoice_show_year_month": false,
+                         *         "purchase_invoice_show_work_time": false,
+                         *         "purchase_invoice_main": "基本業務",
+                         *         "purchase_invoice_deduction": "控除時間",
+                         *         "purchase_invoice_surplus": "超過時間",
+                         *         "purchase_invoice_username_view": true,
+                         *         "purchase_invoice_monthly_only_one": "基本業務",
+                         *         "purchase_invoice_monthly_only_one_username_view": true,
+                         *         "purchase_invoice_hourly_main": "時間内",
+                         *         "purchase_invoice_late_night": "時間内 深夜",
+                         *         "purchase_invoice_overtime": "時間外",
+                         *         "purchase_invoice_overtime_late_night": "時間外 深夜",
+                         *         "purchase_invoice_over_60_hour": "時間外 60時間超過",
+                         *         "purchase_invoice_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *         "purchase_invoice_holiday_1": "法定外休日",
+                         *         "purchase_invoice_holiday_1_late_night": "法定外休日 深夜",
+                         *         "purchase_invoice_holiday_2": "法定休日",
+                         *         "purchase_invoice_holiday_2_late_night": "法定休日 深夜",
+                         *         "purchase_invoice_hourly_username_view": true,
+                         *         "purchase_invoice_hourly_only_one": "時間単価",
+                         *         "purchase_invoice_hourly_only_one_username_view": true,
+                         *         "purchase_invoice_bank_account": "",
+                         *         "purchase_invoice_notes": "",
+                         *         "purchase_invoice_memo": "",
+                         *         "purchase_invoice_mail_subject": "【指定月】分仕入請求書 確認のお願い",
+                         *         "purchase_invoice_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分 仕入請求書を送付いたしますので\r\n以下よりログインし、内容のご確認・承認をお願いいたします。\r\n\r\n承認URL\r\n【承認URL】\r\n\r\nダウンロードURL\r\n【ダウンロードURL】\r\n",
+                         *         "close_out": 0,
+                         *         "notes": ""
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["BusinessPartner"][];
                     };
                 };
@@ -2287,6 +3251,145 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 1,
+                         *       "last_name": null,
+                         *       "first_name": null,
+                         *       "last_name_kana": null,
+                         *       "first_name_kana": null,
+                         *       "lodgment_id": null,
+                         *       "configuration": 1,
+                         *       "configuration_label": 1,
+                         *       "name": "ieyasu",
+                         *       "name_kana": "イエヤス",
+                         *       "partner_number": "",
+                         *       "invoice_code": "",
+                         *       "postal_code": "",
+                         *       "prefectural_id": null,
+                         *       "city": "",
+                         *       "building": "",
+                         *       "branch": "",
+                         *       "appointment": "",
+                         *       "person": "",
+                         *       "tel": "",
+                         *       "email": "",
+                         *       "cc_email": "",
+                         *       "fractional_total": 0,
+                         *       "fractional_minute_total": null,
+                         *       "fractional_start_at": 0,
+                         *       "fractional_minute_start_at": null,
+                         *       "fractional_end_at": 0,
+                         *       "fractional_minute_end_at": null,
+                         *       "invoice_create": 1,
+                         *       "fractional": 0,
+                         *       "fractional_minute": null,
+                         *       "cutoff_date": 31,
+                         *       "pay_cycle": 1,
+                         *       "pay_date": 31,
+                         *       "deal_document_purchases": [
+                         *         "purchase",
+                         *         "work",
+                         *         "expense"
+                         *       ],
+                         *       "purchase_tax_type": "excluded",
+                         *       "purchase_withholding": false,
+                         *       "purchase_subject": "",
+                         *       "purchase_show_year_month": false,
+                         *       "purchase_show_work_time": false,
+                         *       "purchase_main": "基本業務",
+                         *       "purchase_deduction": "控除時間",
+                         *       "purchase_surplus": "超過時間",
+                         *       "purchase_username_view": true,
+                         *       "purchase_monthly_only_one": "基本業務",
+                         *       "purchase_monthly_only_one_username_view": true,
+                         *       "purchase_hourly_main": "時間内",
+                         *       "purchase_late_night": "時間内 深夜",
+                         *       "purchase_overtime": "時間外",
+                         *       "purchase_overtime_late_night": "時間外 深夜",
+                         *       "purchase_over_60_hour": "時間外 60時間超過",
+                         *       "purchase_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "purchase_holiday_1": "法定外休日",
+                         *       "purchase_holiday_1_late_night": "法定外休日 深夜",
+                         *       "purchase_holiday_2": "法定休日",
+                         *       "purchase_holiday_2_late_night": "法定休日 深夜",
+                         *       "purchase_hourly_username_view": true,
+                         *       "purchase_hourly_only_one": "時間単価",
+                         *       "purchase_hourly_only_one_username_view": true,
+                         *       "bank_account": "",
+                         *       "purchase_notes": "",
+                         *       "purchase_memo": "",
+                         *       "purchase_mail_subject": "【指定月】分支払通知書送付 ご案内",
+                         *       "purchase_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分の支払通知書を送付いたしますので、ご査収の程よろしくお願いいたします。\r\n\r\n支払通知書・作業報告書は、以下のURLよりダウンロードできます。（有効期間は本日より40日間）\r\n有効期間を過ぎてしまった場合は、メールの再配信を依頼してください。\r\n\r\n【ダウンロードURL】\r\n",
+                         *       "deal_document_invoices": [
+                         *         "invoice"
+                         *       ],
+                         *       "deal_document_totals": [
+                         *         "invoice"
+                         *       ],
+                         *       "subject": "",
+                         *       "show_year_month": false,
+                         *       "show_work_time": false,
+                         *       "invoice_main": "基本業務",
+                         *       "invoice_deduction": "控除時間",
+                         *       "invoice_surplus": "超過時間",
+                         *       "invoice_username_view": true,
+                         *       "invoice_monthly_only_one": "基本業務",
+                         *       "invoice_monthly_only_one_username_view": true,
+                         *       "invoice_hourly_main": "時間内",
+                         *       "invoice_late_night": "時間内 深夜",
+                         *       "invoice_overtime": "時間外",
+                         *       "invoice_overtime_late_night": "時間外 深夜",
+                         *       "invoice_over_60_hour": "時間外 60時間超過",
+                         *       "invoice_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "invoice_holiday_1": "法定外休日",
+                         *       "invoice_holiday_1_late_night": "法定外休日 深夜",
+                         *       "invoice_holiday_2": "法定休日",
+                         *       "invoice_holiday_2_late_night": "法定休日 深夜",
+                         *       "invoice_hourly_username_view": true,
+                         *       "invoice_hourly_only_one": "時間単価",
+                         *       "invoice_hourly_only_one_username_view": true,
+                         *       "invoice_bank_account": "",
+                         *       "invoice_notes": "",
+                         *       "invoice_memo": "",
+                         *       "mail_subject": "【指定月】分請求書送付 ご案内",
+                         *       "mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分の請求書を送付いたしますので、ご査収の程よろしくお願いいたします。\r\n\r\n請求書・作業報告書は、以下のURLよりダウンロードできます。（有効期間は本日より40日間）\r\n有効期間を過ぎてしまった場合は、メールの再配信を依頼してください。\r\n\r\n【ダウンロードURL】\r\n",
+                         *       "purchase_issue_document": "purchase_invoice",
+                         *       "deal_document_purchase_invoices": [
+                         *         "purchase_invoice",
+                         *         "work"
+                         *       ],
+                         *       "purchase_invoice_tax_type": "excluded",
+                         *       "purchase_invoice_withholding": false,
+                         *       "purchase_invoice_subject": "",
+                         *       "purchase_invoice_show_year_month": false,
+                         *       "purchase_invoice_show_work_time": false,
+                         *       "purchase_invoice_main": "基本業務",
+                         *       "purchase_invoice_deduction": "控除時間",
+                         *       "purchase_invoice_surplus": "超過時間",
+                         *       "purchase_invoice_username_view": true,
+                         *       "purchase_invoice_monthly_only_one": "基本業務",
+                         *       "purchase_invoice_monthly_only_one_username_view": true,
+                         *       "purchase_invoice_hourly_main": "時間内",
+                         *       "purchase_invoice_late_night": "時間内 深夜",
+                         *       "purchase_invoice_overtime": "時間外",
+                         *       "purchase_invoice_overtime_late_night": "時間外 深夜",
+                         *       "purchase_invoice_over_60_hour": "時間外 60時間超過",
+                         *       "purchase_invoice_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "purchase_invoice_holiday_1": "法定外休日",
+                         *       "purchase_invoice_holiday_1_late_night": "法定外休日 深夜",
+                         *       "purchase_invoice_holiday_2": "法定休日",
+                         *       "purchase_invoice_holiday_2_late_night": "法定休日 深夜",
+                         *       "purchase_invoice_hourly_username_view": true,
+                         *       "purchase_invoice_hourly_only_one": "時間単価",
+                         *       "purchase_invoice_hourly_only_one_username_view": true,
+                         *       "purchase_invoice_bank_account": "",
+                         *       "purchase_invoice_notes": "",
+                         *       "purchase_invoice_memo": "",
+                         *       "purchase_invoice_mail_subject": "【指定月】分仕入請求書 確認のお願い",
+                         *       "purchase_invoice_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分 仕入請求書を送付いたしますので\r\n以下よりログインし、内容のご確認・承認をお願いいたします。\r\n\r\n承認URL\r\n【承認URL】\r\n\r\nダウンロードURL\r\n【ダウンロードURL】\r\n",
+                         *       "close_out": 0,
+                         *       "notes": ""
+                         *     } */
                         "application/json": components["schemas"]["BusinessPartner"];
                     };
                 };
@@ -2345,6 +3448,145 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 1,
+                         *       "last_name": null,
+                         *       "first_name": null,
+                         *       "last_name_kana": null,
+                         *       "first_name_kana": null,
+                         *       "lodgment_id": null,
+                         *       "configuration": 1,
+                         *       "configuration_label": 1,
+                         *       "name": "ieyasu",
+                         *       "name_kana": "イエヤス",
+                         *       "partner_number": "",
+                         *       "invoice_code": "",
+                         *       "postal_code": "",
+                         *       "prefectural_id": null,
+                         *       "city": "",
+                         *       "building": "",
+                         *       "branch": "",
+                         *       "appointment": "",
+                         *       "person": "",
+                         *       "tel": "",
+                         *       "email": "",
+                         *       "cc_email": "",
+                         *       "fractional_total": 0,
+                         *       "fractional_minute_total": null,
+                         *       "fractional_start_at": 0,
+                         *       "fractional_minute_start_at": null,
+                         *       "fractional_end_at": 0,
+                         *       "fractional_minute_end_at": null,
+                         *       "invoice_create": 1,
+                         *       "fractional": 0,
+                         *       "fractional_minute": null,
+                         *       "cutoff_date": 31,
+                         *       "pay_cycle": 1,
+                         *       "pay_date": 31,
+                         *       "deal_document_purchases": [
+                         *         "purchase",
+                         *         "work",
+                         *         "expense"
+                         *       ],
+                         *       "purchase_tax_type": "excluded",
+                         *       "purchase_withholding": false,
+                         *       "purchase_subject": "",
+                         *       "purchase_show_year_month": false,
+                         *       "purchase_show_work_time": false,
+                         *       "purchase_main": "基本業務",
+                         *       "purchase_deduction": "控除時間",
+                         *       "purchase_surplus": "超過時間",
+                         *       "purchase_username_view": true,
+                         *       "purchase_monthly_only_one": "基本業務",
+                         *       "purchase_monthly_only_one_username_view": true,
+                         *       "purchase_hourly_main": "時間内",
+                         *       "purchase_late_night": "時間内 深夜",
+                         *       "purchase_overtime": "時間外",
+                         *       "purchase_overtime_late_night": "時間外 深夜",
+                         *       "purchase_over_60_hour": "時間外 60時間超過",
+                         *       "purchase_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "purchase_holiday_1": "法定外休日",
+                         *       "purchase_holiday_1_late_night": "法定外休日 深夜",
+                         *       "purchase_holiday_2": "法定休日",
+                         *       "purchase_holiday_2_late_night": "法定休日 深夜",
+                         *       "purchase_hourly_username_view": true,
+                         *       "purchase_hourly_only_one": "時間単価",
+                         *       "purchase_hourly_only_one_username_view": true,
+                         *       "bank_account": "",
+                         *       "purchase_notes": "",
+                         *       "purchase_memo": "",
+                         *       "purchase_mail_subject": "【指定月】分支払通知書送付 ご案内",
+                         *       "purchase_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分の支払通知書を送付いたしますので、ご査収の程よろしくお願いいたします。\r\n\r\n支払通知書・作業報告書は、以下のURLよりダウンロードできます。（有効期間は本日より40日間）\r\n有効期間を過ぎてしまった場合は、メールの再配信を依頼してください。\r\n\r\n【ダウンロードURL】\r\n",
+                         *       "deal_document_invoices": [
+                         *         "invoice"
+                         *       ],
+                         *       "deal_document_totals": [
+                         *         "invoice"
+                         *       ],
+                         *       "subject": "",
+                         *       "show_year_month": false,
+                         *       "show_work_time": false,
+                         *       "invoice_main": "基本業務",
+                         *       "invoice_deduction": "控除時間",
+                         *       "invoice_surplus": "超過時間",
+                         *       "invoice_username_view": true,
+                         *       "invoice_monthly_only_one": "基本業務",
+                         *       "invoice_monthly_only_one_username_view": true,
+                         *       "invoice_hourly_main": "時間内",
+                         *       "invoice_late_night": "時間内 深夜",
+                         *       "invoice_overtime": "時間外",
+                         *       "invoice_overtime_late_night": "時間外 深夜",
+                         *       "invoice_over_60_hour": "時間外 60時間超過",
+                         *       "invoice_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "invoice_holiday_1": "法定外休日",
+                         *       "invoice_holiday_1_late_night": "法定外休日 深夜",
+                         *       "invoice_holiday_2": "法定休日",
+                         *       "invoice_holiday_2_late_night": "法定休日 深夜",
+                         *       "invoice_hourly_username_view": true,
+                         *       "invoice_hourly_only_one": "時間単価",
+                         *       "invoice_hourly_only_one_username_view": true,
+                         *       "invoice_bank_account": "",
+                         *       "invoice_notes": "",
+                         *       "invoice_memo": "",
+                         *       "mail_subject": "【指定月】分請求書送付 ご案内",
+                         *       "mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分の請求書を送付いたしますので、ご査収の程よろしくお願いいたします。\r\n\r\n請求書・作業報告書は、以下のURLよりダウンロードできます。（有効期間は本日より40日間）\r\n有効期間を過ぎてしまった場合は、メールの再配信を依頼してください。\r\n\r\n【ダウンロードURL】\r\n",
+                         *       "purchase_issue_document": "purchase_invoice",
+                         *       "deal_document_purchase_invoices": [
+                         *         "purchase_invoice",
+                         *         "work"
+                         *       ],
+                         *       "purchase_invoice_tax_type": "excluded",
+                         *       "purchase_invoice_withholding": false,
+                         *       "purchase_invoice_subject": "",
+                         *       "purchase_invoice_show_year_month": false,
+                         *       "purchase_invoice_show_work_time": false,
+                         *       "purchase_invoice_main": "基本業務",
+                         *       "purchase_invoice_deduction": "控除時間",
+                         *       "purchase_invoice_surplus": "超過時間",
+                         *       "purchase_invoice_username_view": true,
+                         *       "purchase_invoice_monthly_only_one": "基本業務",
+                         *       "purchase_invoice_monthly_only_one_username_view": true,
+                         *       "purchase_invoice_hourly_main": "時間内",
+                         *       "purchase_invoice_late_night": "時間内 深夜",
+                         *       "purchase_invoice_overtime": "時間外",
+                         *       "purchase_invoice_overtime_late_night": "時間外 深夜",
+                         *       "purchase_invoice_over_60_hour": "時間外 60時間超過",
+                         *       "purchase_invoice_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "purchase_invoice_holiday_1": "法定外休日",
+                         *       "purchase_invoice_holiday_1_late_night": "法定外休日 深夜",
+                         *       "purchase_invoice_holiday_2": "法定休日",
+                         *       "purchase_invoice_holiday_2_late_night": "法定休日 深夜",
+                         *       "purchase_invoice_hourly_username_view": true,
+                         *       "purchase_invoice_hourly_only_one": "時間単価",
+                         *       "purchase_invoice_hourly_only_one_username_view": true,
+                         *       "purchase_invoice_bank_account": "",
+                         *       "purchase_invoice_notes": "",
+                         *       "purchase_invoice_memo": "",
+                         *       "purchase_invoice_mail_subject": "【指定月】分仕入請求書 確認のお願い",
+                         *       "purchase_invoice_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分 仕入請求書を送付いたしますので\r\n以下よりログインし、内容のご確認・承認をお願いいたします。\r\n\r\n承認URL\r\n【承認URL】\r\n\r\nダウンロードURL\r\n【ダウンロードURL】\r\n",
+                         *       "close_out": 0,
+                         *       "notes": ""
+                         *     } */
                         "application/json": components["schemas"]["BusinessPartner"];
                     };
                 };
@@ -2385,6 +3627,146 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 1,
+                         *       "last_name": null,
+                         *       "first_name": null,
+                         *       "last_name_kana": null,
+                         *       "first_name_kana": null,
+                         *       "lodgment_id": null,
+                         *       "configuration": 1,
+                         *       "configuration_label": 1,
+                         *       "deal_report_mail_subject": "合計請求メール件名",
+                         *       "deal_report_mail_body": "合計請求メール本文",
+                         *       "name": "ieyasu",
+                         *       "name_kana": "イエヤス",
+                         *       "partner_number": "",
+                         *       "postal_code": "",
+                         *       "prefectural_id": null,
+                         *       "city": "",
+                         *       "building": "",
+                         *       "branch": "",
+                         *       "appointment": "",
+                         *       "person": "",
+                         *       "tel": "",
+                         *       "email": "",
+                         *       "cc_email": "",
+                         *       "fractional_total": 0,
+                         *       "fractional_minute_total": null,
+                         *       "fractional_start_at": 0,
+                         *       "fractional_minute_start_at": null,
+                         *       "fractional_end_at": 0,
+                         *       "fractional_minute_end_at": null,
+                         *       "invoice_create": 1,
+                         *       "fractional": 0,
+                         *       "fractional_minute": null,
+                         *       "cutoff_date": 31,
+                         *       "pay_cycle": 1,
+                         *       "pay_date": 31,
+                         *       "deal_document_purchases": [
+                         *         "purchase",
+                         *         "work",
+                         *         "expense"
+                         *       ],
+                         *       "purchase_tax_type": "excluded",
+                         *       "purchase_withholding": false,
+                         *       "purchase_subject": "",
+                         *       "purchase_show_year_month": false,
+                         *       "purchase_show_work_time": false,
+                         *       "purchase_main": "基本業務",
+                         *       "purchase_deduction": "控除時間",
+                         *       "purchase_surplus": "超過時間",
+                         *       "purchase_username_view": true,
+                         *       "purchase_monthly_only_one": "基本業務",
+                         *       "purchase_monthly_only_one_username_view": true,
+                         *       "purchase_hourly_main": "時間内",
+                         *       "purchase_late_night": "時間内 深夜",
+                         *       "purchase_overtime": "時間外",
+                         *       "purchase_overtime_late_night": "時間外 深夜",
+                         *       "purchase_over_60_hour": "時間外 60時間超過",
+                         *       "purchase_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "purchase_holiday_1": "法定外休日",
+                         *       "purchase_holiday_1_late_night": "法定外休日 深夜",
+                         *       "purchase_holiday_2": "法定休日",
+                         *       "purchase_holiday_2_late_night": "法定休日 深夜",
+                         *       "purchase_hourly_username_view": true,
+                         *       "purchase_hourly_only_one": "時間単価",
+                         *       "purchase_hourly_only_one_username_view": true,
+                         *       "bank_account": "",
+                         *       "purchase_notes": "",
+                         *       "purchase_memo": "",
+                         *       "purchase_mail_subject": "【指定月】分支払通知書送付 ご案内",
+                         *       "purchase_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分の支払通知書を送付いたしますので、ご査収の程よろしくお願いいたします。\r\n\r\n支払通知書・作業報告書は、以下のURLよりダウンロードできます。（有効期間は本日より40日間）\r\n有効期間を過ぎてしまった場合は、メールの再配信を依頼してください。\r\n\r\n【ダウンロードURL】\r\n",
+                         *       "deal_document_invoices": [
+                         *         "invoice"
+                         *       ],
+                         *       "deal_document_totals": [
+                         *         "invoice"
+                         *       ],
+                         *       "subject": "",
+                         *       "show_year_month": false,
+                         *       "show_work_time": false,
+                         *       "invoice_main": "基本業務",
+                         *       "invoice_deduction": "控除時間",
+                         *       "invoice_surplus": "超過時間",
+                         *       "invoice_username_view": true,
+                         *       "invoice_monthly_only_one": "基本業務",
+                         *       "invoice_monthly_only_one_username_view": true,
+                         *       "invoice_hourly_main": "時間内",
+                         *       "invoice_late_night": "時間内 深夜",
+                         *       "invoice_overtime": "時間外",
+                         *       "invoice_overtime_late_night": "時間外 深夜",
+                         *       "invoice_over_60_hour": "時間外 60時間超過",
+                         *       "invoice_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "invoice_holiday_1": "法定外休日",
+                         *       "invoice_holiday_1_late_night": "法定外休日 深夜",
+                         *       "invoice_holiday_2": "法定休日",
+                         *       "invoice_holiday_2_late_night": "法定休日 深夜",
+                         *       "invoice_hourly_username_view": true,
+                         *       "invoice_hourly_only_one": "時間単価",
+                         *       "invoice_hourly_only_one_username_view": true,
+                         *       "invoice_bank_account": "",
+                         *       "invoice_notes": "",
+                         *       "invoice_memo": "",
+                         *       "mail_subject": "【指定月】分請求書送付 ご案内",
+                         *       "mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分の請求書を送付いたしますので、ご査収の程よろしくお願いいたします。\r\n\r\n請求書・作業報告書は、以下のURLよりダウンロードできます。（有効期間は本日より40日間）\r\n有効期間を過ぎてしまった場合は、メールの再配信を依頼してください。\r\n\r\n【ダウンロードURL】\r\n",
+                         *       "purchase_issue_document": "purchase_invoice",
+                         *       "deal_document_purchase_invoices": [
+                         *         "purchase_invoice",
+                         *         "work"
+                         *       ],
+                         *       "purchase_invoice_tax_type": "excluded",
+                         *       "purchase_invoice_withholding": false,
+                         *       "purchase_invoice_subject": "",
+                         *       "purchase_invoice_show_year_month": false,
+                         *       "purchase_invoice_show_work_time": false,
+                         *       "purchase_invoice_main": "基本業務",
+                         *       "purchase_invoice_deduction": "控除時間",
+                         *       "purchase_invoice_surplus": "超過時間",
+                         *       "purchase_invoice_username_view": true,
+                         *       "purchase_invoice_monthly_only_one": "基本業務",
+                         *       "purchase_invoice_monthly_only_one_username_view": true,
+                         *       "purchase_invoice_hourly_main": "時間内",
+                         *       "purchase_invoice_late_night": "時間内 深夜",
+                         *       "purchase_invoice_overtime": "時間外",
+                         *       "purchase_invoice_overtime_late_night": "時間外 深夜",
+                         *       "purchase_invoice_over_60_hour": "時間外 60時間超過",
+                         *       "purchase_invoice_over_60_hour_late_night": "時間外 60時間超過 深夜",
+                         *       "purchase_invoice_holiday_1": "法定外休日",
+                         *       "purchase_invoice_holiday_1_late_night": "法定外休日 深夜",
+                         *       "purchase_invoice_holiday_2": "法定休日",
+                         *       "purchase_invoice_holiday_2_late_night": "法定休日 深夜",
+                         *       "purchase_invoice_hourly_username_view": true,
+                         *       "purchase_invoice_hourly_only_one": "時間単価",
+                         *       "purchase_invoice_hourly_only_one_username_view": true,
+                         *       "purchase_invoice_bank_account": "",
+                         *       "purchase_invoice_notes": "",
+                         *       "purchase_invoice_memo": "",
+                         *       "purchase_invoice_mail_subject": "【指定月】分仕入請求書 確認のお願い",
+                         *       "purchase_invoice_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分 仕入請求書を送付いたしますので\r\n以下よりログインし、内容のご確認・承認をお願いいたします。\r\n\r\n承認URL\r\n【承認URL】\r\n\r\nダウンロードURL\r\n【ダウンロードURL】\r\n",
+                         *       "close_out": 0,
+                         *       "notes": ""
+                         *     } */
                         "application/json": components["schemas"]["BusinessPartner"];
                     };
                 };
@@ -2460,6 +3842,16 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example [
+                         *       {
+                         *         "id": 84,
+                         *         "first_name": "名",
+                         *         "last_name": "姓",
+                         *         "email": "ieyasuapply@ieyasu.co.jp",
+                         *         "branch": "部門",
+                         *         "appointment": "役職"
+                         *       }
+                         *     ] */
                         "application/json": components["schemas"]["BusinessPartnerUser"][];
                     };
                 };
@@ -2505,6 +3897,14 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 84,
+                         *       "first_name": "名",
+                         *       "last_name": "姓",
+                         *       "email": "ieyasuapply@ieyasu.co.jp",
+                         *       "branch": "部門",
+                         *       "appointment": "役職"
+                         *     } */
                         "application/json": components["schemas"]["BusinessPartnerUser"];
                     };
                 };
@@ -2568,6 +3968,14 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 84,
+                         *       "first_name": "名",
+                         *       "last_name": "姓",
+                         *       "email": "ieyasuapply@ieyasu.co.jp",
+                         *       "branch": "部門",
+                         *       "appointment": "役職"
+                         *     } */
                         "application/json": components["schemas"]["BusinessPartnerUser"];
                     };
                 };
@@ -2613,6 +4021,14 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example {
+                         *       "id": 84,
+                         *       "first_name": "名",
+                         *       "last_name": "姓",
+                         *       "email": "ieyasuapply@ieyasu.co.jp",
+                         *       "branch": "部門",
+                         *       "appointment": "役職"
+                         *     } */
                         "application/json": components["schemas"]["BusinessPartnerUser"];
                     };
                 };
@@ -2664,6 +4080,9 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example 年度,社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,生年月日,性別,非居住者区分,外国人区分,現住所_郵便番号,現住所_都道府県,現住所_市区町村,現住所_町名・番地,現住所_建物名・部屋番号,現住所_世帯主の氏名_姓,現住所_世帯主の氏名_名,現住所_世帯主との続柄,住民票住所_郵便番号,住民票住所_都道府県,住民票住所_市区町村,住民票住所_町名・番地,住民票住所_建物名・部屋番号,住民票住所_世帯主の氏名_姓,住民票住所_世帯主の氏名_名,住民票住所_世帯主との続柄,給与所得金額,給与所得以外の所得の合計金額,合計所得見積金額,勤労学生,学校名,入学年月日,今年から勤労学生に該当した場合_該当月日,今年から勤労学生に該当した場合_事由,障害者区分,手帳の種類と等級,手帳交付日,今年から障害者に該当した場合_該当月日,今年から障害者に該当した場合_事由,ひとり親・寡婦区分,今年からひとり親・寡婦に該当した場合_該当月日,今年からひとり親・寡婦に該当した場合_事由,従たる給与についての扶養控除等申告書の提出有無,住民税に関する事項_ひとり親・寡婦,配偶者の有無,配偶者_氏名_姓,配偶者_氏名_名,配偶者_カナ_セイ,配偶者_カナ_メイ,配偶者_生年月日,配偶者_同居区分,配偶者_居住地区分,配偶者_郵便番号,配偶者_都道府県,配偶者_市区町村,配偶者_町名・番地,配偶者_建物名・部屋番号,配偶者_Address Line 1,配偶者_Address Line 2,配偶者_City,配偶者_State_Province_Region,配偶者_ZIP_Postal _Code,配偶者_Country,配偶者_非居住者該当,配偶者_年間送金額,配偶者_合計所得見積金額,配偶者_障害者区分,配偶者_申告書障害者区分判定,配偶者_手帳の種類と等級,配偶者_手帳交付日,配偶者_今年から障害者に該当した場合_該当月日,配偶者_今年から障害者に該当した場合_事由,配偶者_今年から扶養に該当した場合_該当月日,配偶者_今年から扶養に該当した場合_事由,配偶者_死亡月日,配偶者_源泉控除対象配偶者区分,配偶者_老人控除配偶者,配偶者_住民税に関する事項_退職手当等,配偶者_住民税に関する事項_退職所得を除く所得見積金額,扶養親族1_氏名_姓,扶養親族1_氏名_名,扶養親族1_氏名_カナ_セイ,扶養親族1_氏名_カナ_メイ,扶養親族1_生年月日,扶養親族1_続柄,扶養親族1_同居区分,扶養親族1_居住地区分,扶養親族1_郵便番号,扶養親族1_都道府県,扶養親族1_市区町村,扶養親族1_町名・番地,扶養親族1_建物名・部屋番号,扶養親族1_Address Line 1,扶養親族1_Address Line 2,扶養親族1_City,扶養親族1_State_Province_Region,扶養親族1_ZIP_Postal _Code,扶養親族1_Country,扶養親族1_非居住者該当,扶養親族1_年間送金額,扶養親族1_非居住者理由_16歳以上30歳未満又は70歳以上,扶養親族1_非居住者理由_留学,扶養親族1_非居住者理由_障害者,扶養親族1_非居住者理由_38万円以上の支払,扶養親族1_合計所得見積金額,扶養親族1_障害者区分,扶養親族1_申告書障害者区分判定,扶養親族1_手帳の種類と等級,扶養親族1_手帳交付日,扶養親族1_今年から障害者に該当した場合_該当月日,扶養親族1_今年から障害者に該当した場合_事由,扶養親族1_今年から扶養に該当した場合_該当月日,扶養親族1_今年から扶養に該当した場合_事由,扶養親族1_死亡月日,扶養親族1_扶養区分,扶養親族1_住民税に関する事項_退職手当等,扶養親族1_住民税に関する事項_退職所得を除く所得見積金額,障害者、寡婦、ひとり親、勤労学生_一般の障害者_本人,障害者、寡婦、ひとり親、勤労学生_特別障害者_本人,障害者、寡婦、ひとり親、勤労学生_一般の障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_特別障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_一般の障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_特別障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_一般の障害者_扶養親族_人数,障害者、寡婦、ひとり親、勤労学生_特別障害者_扶養親族_人数,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_扶養親族_人数,他の所得者の扶養親族1_氏名_姓,他の所得者の扶養親族1_氏名_名,他の所得者の扶養親族1_氏名_カナ_セイ,他の所得者の扶養親族1_氏名_カナ_メイ,他の所得者の扶養親族1_生年月日,他の所得者の扶養親族1_続柄,他の所得者の扶養親族1_同居区分,他の所得者の扶養親族1_居住地区分,他の所得者の扶養親族1_郵便番号,他の所得者の扶養親族1_都道府県,他の所得者の扶養親族1_市区町村,他の所得者の扶養親族1_町名・番地,他の所得者の扶養親族1_建物名・部屋番号,他の所得者の扶養親族1_Address Line 1,他の所得者の扶養親族1_Address Line 2,他の所得者の扶養親族1_City,他の所得者の扶養親族1_State_Province_Region,他の所得者の扶養親族1_ZIP_Postal_Code,他の所得者の扶養親族1_Country,他の所得者の扶養親族1_合計所得見積金額,他の所得者の扶養親族1_障害者区分,他の所得者の扶養親族1_手帳の種類と等級,他の所得者の扶養親族1_手帳交付日,他の所得者の扶養親族1_今年から扶養に該当した場合_該当月日,他の所得者の扶養親族1_今年から扶養に該当した場合_事由,他の所得者の扶養親族1_死亡月日,控除を受ける他の所得者1_氏名_姓,控除を受ける他の所得者1_氏名_名,控除を受ける他の所得者1_続柄,控除を受ける他の所得者1_同居区分,控除を受ける他の所得者1_郵便番号,控除を受ける他の所得者1_都道府県,控除を受ける他の所得者1_市区町村,控除を受ける他の所得者1_町名・番地,控除を受ける他の所得者1_建物名・部屋番号,一般の扶養親族_合計人数,特定扶養親族_合計人数,老人扶養親族_合計人数,同居老人扶養親族_合計人数,年少扶養親族_16歳未満_合計人数,一般障害者_配偶者扶養親族の合計人数,特別障害者_配偶者扶養親族の合計人数,同居特別障害者_配偶者扶養親族の合計人数,非居住者親族_配偶者扶養親族の合計人数
+                         *     令和5年,A0001,山田,太郎,サンプル会社,対象,,山田,太郎,ヤマダ,タロウ,1990/07/25,男,該当しない,外国人,1670xx1,東京都,杉並区,高円寺,ビル名,山田,太郎,本人,1670xx1,東京都,杉並区,高円寺N丁目N番地N号,ビル名,山田,太郎,本人,9500000,0,9500000,対象外,,,,,該当しない,,,,,対象外,,,なし,対象外,あり,NAM,Wife,ナム,ワイフ,1996/04/05,同居,,,,,,,,,,,,,該当しない,,0,該当しない,,,,,,2024/01/01,結婚,,該当しない,該当しない,該当しない,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,0
+                         *      */
                         "text/csv": string;
                     };
                 };
@@ -2718,6 +4137,9 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,一般の生命保険_生命保険の新契約支払金額合計_A,一般の生命保険_生命保険の旧契約支払金額合計_B,一般の生命保険_生命保険の控除額_イ,介護医療_支払金額合計_C,介護医療_介護医療の控除額_ロ,個人年金_新契約支払金額合計_D,個人年金_旧契約支払金額合計_E,個人年金_個人年金の控除額_ハ,生命保険料控除額合計_イ＋ロ＋ハ,地震保険_地震保険の保険料合計_B,地震保険_旧長期損害保険料合計_C,地震保険_地震保険の控除額合計,社会保険_国民年金保険料等の合計金額,社会保険_社会保険の控除額合計,小規模企業共済_小規模企業共済等掛金控除額合計
+                         *     A0001,山田,太郎,サンプル会社,対象,,山田,太郎,ヤマダ,タロウ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                         *      */
                         "text/csv": string;
                     };
                 };
@@ -2772,6 +4194,9 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,基礎控除申告有無,配偶者控除申告有無,所得金額調整控除申告書有無,本人の給与収入,本人の給与所得,本人の給与以外の所得額,本人の合計所得見積額,本人の所得見積り額_区分I,本人定額減税対象,基礎控除の額,配偶者控除区分,配偶者_氏名_姓,配偶者_氏名_名,配偶者_カナ_セイ,配偶者_カナ_メイ,配偶者_生年月日,配偶者_同居区分,配偶者_居住地区分,配偶者_郵便番号,配偶者_都道府県,配偶者_市区町村,配偶者_町名・番地,配偶者_建物名・部屋番号,配偶者_Address Line 1,配偶者_Address Line 2,配偶者_City,配偶者_State_Province_Region,配偶者_ZIP_Postal_Code,配偶者_Country,配偶者_非居住者該当,配偶者_年間送金額,配偶者_給与収入,配偶者_給与所得,配偶者_給与所得以外の所得,配偶者_合計所得見積額,配偶者_所得見積額区分_区分II,配偶者控除の額,配偶者特別控除の額,配偶者定額減税対象,所得金額調整控除_当社の給与のみで850万円をこえている,所得金額調整控除_申告条件,所得金額調整控除_同一生計配偶者又は扶養親族の氏名,所得金額調整控除_同一生計配偶者又は扶養親族の氏名_カナ,所得金額調整控除_同一生計配偶者又は扶養親族と住所が異なる場合の住所,所得金額調整控除_同一生計配偶者又は扶養親族の生年月日,所得金額調整控除_同一生計配偶者又は扶養親族のあなたとの続柄,所得金額調整控除_同一生計配偶者又は扶養親族の合計所得見積額,所得金額調整控除_特別障害者_特別障害者に該当する事実,所得金額調整控除_特別障害者_扶養控除申告書のとおり
+                         *     A0001,山田,太郎,サンプル会社,対象,,山田,太郎,ヤマダ,タロウ,あり,あり,なし,11450000,9500000,0,9500000,B,480000,配偶者控除対象,もうり,らん,モウリ,ラン,1996/04/05,同居,,,,,,,,,,,,,該当しない,,100000,0,0,0,2,260000,,,,,,該当する,,,,,,,,,
+                         *      */
                         "text/csv": string;
                     };
                 };
@@ -2826,6 +4251,9 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,住宅借入金等特別控除額,住宅借入金等特別控除適用数,居住開始年月日1,住宅借入金等特別控除区分1,住宅借入金等特別控除区分_特定1,住宅借入金等年末残高1
+                         *     A0001,山田,太郎,サンプル会社,対象,,山田,太郎,ヤマダ,タロウ,,N回,2022年02月01日,N回目,,対象外,,
+                         *      */
                         "text/csv": string;
                     };
                 };
@@ -2880,6 +4308,9 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
+                        /** @example 社員番号,給与支払者_名称,給与支払事務所コード,姓,名,源泉徴収票の提出状況1,会社名1,所在地_住所_1,退職年月日1,総支給額_課税分_1,所得税1,社会保険料1,社会保険料の内_小規模企業共済等掛金_1
+                         *     A0001,CompanyName,2011001058413,山田,太郎,会社に提出済み,サンプル会社,渋谷区,2022-04-01,,100000,,
+                         *      */
                         "text/csv": string;
                     };
                 };
@@ -3409,15 +4840,15 @@ export interface components {
             time_paid_holiday?: number;
             /** @description 本日までの時間有給休暇残時間 */
             time_paid_holiday_zansu?: number;
-            /** @description 子の看護休暇日数 */
+            /** @description 子の看護等休暇日数 */
             kango_days?: number;
-            /** @description 本日までの子の看護休暇残数 */
+            /** @description 本日までの子の看護等休暇残数 */
             kango_remain?: number;
-            /** @description 子の看護休暇 時間休暇 */
+            /** @description 子の看護等休暇 時間休暇 */
             kango_time_paid_holiday?: number;
-            /** @description 本日までの子の看護休暇 時間休暇残時間 */
+            /** @description 本日までの子の看護等休暇 時間休暇残時間 */
             kango_time_paid_holiday_zansu?: number;
-            /** @description 子の看護休暇 休暇日数 */
+            /** @description 子の看護等休暇 休暇日数 */
             kango_paid_holiday_with_time_paid?: number;
             /** @description 介護休暇日数 */
             kaigo_days?: number;
@@ -3707,6 +5138,11 @@ export interface components {
              * @description 拠点ID
              */
             lodgment_id?: number | null;
+            /**
+             * Format: int64
+             * @description 36協定ID
+             */
+            agreement36_id?: number | null;
             /**
              * Format: int64
              * @description 部門ID
