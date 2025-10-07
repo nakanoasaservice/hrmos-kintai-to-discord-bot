@@ -1,10 +1,5 @@
 import type { RESTPostAPIChannelMessageJSONBody } from "discord-api-types/v10";
 
-interface DiscordErrorResponse {
-	code: number;
-	message: string;
-}
-
 export async function sendDiscordMessage(
 	webhookUrl: string,
 	message: RESTPostAPIChannelMessageJSONBody,
@@ -18,12 +13,10 @@ export async function sendDiscordMessage(
 	});
 
 	if (!response.ok) {
-		const errorBody = (await response.json()) as DiscordErrorResponse;
+		const errorBody = await response.text();
 		console.error(errorBody);
 
-		throw new Error(
-			`Discord API error: ${response.status} - ${errorBody.message}`,
-		);
+		throw new Error(`Discord API error`, { cause: errorBody });
 	}
 
 	return response;
