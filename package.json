@@ -20,13 +20,13 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.5",
-		"@cloudflare/vitest-pool-workers": "^0.9.10",
-		"@cloudflare/workers-types": "^4.20251004.0",
+		"@cloudflare/vitest-pool-workers": "^0.9.12",
+		"@cloudflare/workers-types": "^4.20251011.0",
 		"discord-api-types": "^0.38.29",
 		"openapi-typescript": "^7.9.1",
 		"type-fest": "^4.41.0",
 		"typescript": "^5.9.3",
 		"vitest": "2.1.9",
-		"wrangler": "^4.42.0"
+		"wrangler": "^4.42.2"
 	}
 }
