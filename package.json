@@ -15,18 +15,18 @@
 	"dependencies": {
 		"@date-fns/tz": "^1.4.1",
 		"date-fns": "^4.1.0",
-		"openapi-fetch": "^0.14.1",
+		"openapi-fetch": "^0.15.0",
 		"valibot": "1.1.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.2.5",
-		"@cloudflare/vitest-pool-workers": "^0.9.12",
+		"@biomejs/biome": "^2.2.6",
+		"@cloudflare/vitest-pool-workers": "^0.9.13",
 		"@cloudflare/workers-types": "^4.20251011.0",
-		"discord-api-types": "^0.38.29",
-		"openapi-typescript": "^7.9.1",
+		"discord-api-types": "^0.38.30",
+		"openapi-typescript": "^7.10.1",
 		"type-fest": "^4.41.0",
 		"typescript": "^5.9.3",
 		"vitest": "2.1.9",
-		"wrangler": "^4.42.2"
+		"wrangler": "^4.43.0"
 	}
 }
