@@ -1,7 +1,14 @@
 import type { RESTPostAPIChannelMessageJSONBody } from "discord-api-types/v10";
+import * as v from "valibot";
+
+export const DiscordWebhookUrlSchema = v.pipe(
+	v.string(),
+	v.brand("DiscordWebhookUrl"),
+);
+type DiscordWebhookUrl = v.InferOutput<typeof DiscordWebhookUrlSchema>;
 
 export async function sendDiscordMessage(
-	webhookUrl: string,
+	webhookUrl: DiscordWebhookUrl,
 	message: RESTPostAPIChannelMessageJSONBody,
 ) {
 	const response = await fetch(webhookUrl, {

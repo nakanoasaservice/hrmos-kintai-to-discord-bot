@@ -3,6 +3,7 @@ import originalCreateClient, {
 	type Client,
 	type Middleware,
 } from "openapi-fetch";
+import * as v from "valibot";
 import type { components, paths } from "./lib/api/v1";
 
 export type IeyasuClient = Client<paths>;
@@ -20,11 +21,14 @@ export function createIeyasuClient(
 	return client;
 }
 
-type Tagged<T, K> = T & { __brand: K };
+export const CompanyNameSchema = v.pipe(v.string(), v.brand("CompanyName"));
+type CompanyName = v.InferOutput<typeof CompanyNameSchema>;
 
-type SecretKey = Tagged<string, "SecretKey">;
-type CompanyName = Tagged<string, "CompanyName">;
-type BaseUrl = Tagged<string, "BaseUrl">;
+export const SecretKeySchema = v.pipe(v.string(), v.brand("SecretKey"));
+type SecretKey = v.InferOutput<typeof SecretKeySchema>;
+
+export const BaseUrlSchema = v.pipe(v.string(), v.brand("BaseUrl"));
+type BaseUrl = v.InferOutput<typeof BaseUrlSchema>;
 
 type TokenResponse = components["schemas"]["Token"];
 

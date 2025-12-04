@@ -1,12 +1,17 @@
 import { subMinutes } from "date-fns";
 import * as v from "valibot";
-import { sendDiscordMessage } from "./discord";
-import { createIeyasuClient } from "./ieyasu";
+import { DiscordWebhookUrlSchema, sendDiscordMessage } from "./discord";
+import {
+	CompanyNameSchema,
+	createIeyasuClient,
+	SecretKeySchema,
+} from "./ieyasu";
 import { formatStampLog, getStampLogsDaily, resolveName } from "./model";
 
 const EnvSchema = v.object({
-	DISCORD_WEBHOOK_URL: v.string(),
-	HRMOS_COMPANY_NAME: v.string(),
+	DISCORD_WEBHOOK_URL: DiscordWebhookUrlSchema,
+	HRMOS_COMPANY_NAME: CompanyNameSchema,
+	HRMOS_API_TOKEN: SecretKeySchema,
 });
 
 export default {
@@ -23,9 +28,9 @@ export default {
 		}
 
 		const client = createIeyasuClient(
-			env.HRMOS_COMPANY_NAME,
+			result.output.HRMOS_COMPANY_NAME,
 			env.AUTH_TOKENS,
-			env.HRMOS_API_TOKEN,
+			result.output.HRMOS_API_TOKEN,
 		);
 
 		const stampLogs = await getStampLogsDaily(
@@ -50,7 +55,7 @@ export default {
 			return;
 		}
 
-		await sendDiscordMessage(env.DISCORD_WEBHOOK_URL, {
+		await sendDiscordMessage(result.output.DISCORD_WEBHOOK_URL, {
 			content: messages.join("\n"),
 		});
 	},
