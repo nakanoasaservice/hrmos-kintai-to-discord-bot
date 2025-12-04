@@ -7,7 +7,8 @@
 		"source.organizeImports.biome": "explicit"
 	},
 	"files.associations": {
-		".dev.vars": "dotenv"
+		".dev.vars": "dotenv",
+		".dev.vars.example": "dotenv"
 	},
 	"cSpell.words": ["hrmos", "kintai", "nakano", "notionhq", "valibot"]
 }

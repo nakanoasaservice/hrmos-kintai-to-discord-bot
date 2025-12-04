@@ -7,7 +7,7 @@ declare namespace Cloudflare {
 	}
 	interface Env {
 		AUTH_TOKENS: KVNamespace;
-		HRMOS_API_TOKEN: string;
+		HRMOS_API_KEY: string;
 		HRMOS_COMPANY_NAME: string;
 		DISCORD_WEBHOOK_URL: string;
 	}

@@ -1,1 +1,3 @@
-DISCORD_BOT_TOKEN=
+HRMOS_API_KEY=  # 管理画面より作成したAPIキー
+HRMOS_COMPANY_NAME=  # ログインURLの末尾に含まれる会社独自の文字列
+DISCORD_WEBHOOK_URL=  # DiscordのWebhook URL

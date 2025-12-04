@@ -11,12 +11,12 @@ export type IeyasuClient = Client<paths>;
 export function createIeyasuClient(
 	companyName: CompanyName,
 	kv: KVNamespace,
-	secretKey: SecretKey,
+	apiKey: ApiKey,
 ) {
 	const baseUrl = createBaseUrl(companyName);
 
 	const client = originalCreateClient<paths>({ baseUrl });
-	client.use(createAuthMiddleware(baseUrl, kv, secretKey));
+	client.use(createAuthMiddleware(baseUrl, kv, apiKey));
 
 	return client;
 }
@@ -24,8 +24,8 @@ export function createIeyasuClient(
 export const CompanyNameSchema = v.pipe(v.string(), v.brand("CompanyName"));
 type CompanyName = v.InferOutput<typeof CompanyNameSchema>;
 
-export const SecretKeySchema = v.pipe(v.string(), v.brand("SecretKey"));
-type SecretKey = v.InferOutput<typeof SecretKeySchema>;
+export const ApiKeySchema = v.pipe(v.string(), v.brand("ApiKey"));
+type ApiKey = v.InferOutput<typeof ApiKeySchema>;
 
 export const BaseUrlSchema = v.pipe(v.string(), v.brand("BaseUrl"));
 type BaseUrl = v.InferOutput<typeof BaseUrlSchema>;
@@ -62,13 +62,13 @@ function needsPostponeToken(token: TokenResponse) {
 async function resolveToken(
 	client: IeyasuClient,
 	kv: KVNamespace,
-	secretKey: SecretKey,
+	apiKey: ApiKey,
 ): Promise<TokenResponse> {
 	const token = await getTokenFromCache(kv);
 	if (!token) {
 		const newToken = await client.GET("/authentication/token", {
 			headers: {
-				Authorization: `Basic ${secretKey}`,
+				Authorization: `Basic ${apiKey}`,
 			},
 		});
 		if (newToken.error) {
@@ -109,7 +109,7 @@ async function resolveToken(
 function createAuthMiddleware(
 	baseUrl: BaseUrl,
 	kv: KVNamespace,
-	secretKey: SecretKey,
+	apiKey: ApiKey,
 ): Middleware {
 	const client = originalCreateClient<paths>({ baseUrl });
 
@@ -118,7 +118,7 @@ function createAuthMiddleware(
 	const middleware: Middleware = {
 		async onRequest({ request }) {
 			if (!token || needsPostponeToken(token)) {
-				token = await resolveToken(client, kv, secretKey);
+				token = await resolveToken(client, kv, apiKey);
 			}
 
 			request.headers.set("Authorization", `Token ${token.token}`);
