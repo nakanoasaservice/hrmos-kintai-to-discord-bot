@@ -30,10 +30,12 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "expired_at": "2018-09-23T04:56:07.000+09:00",
                          *       "token": "Em94Vf961af8gSB2QtTVmGgn"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["Token"];
                     };
                 };
@@ -83,10 +85,12 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "expired_at": "2018-09-24T04:56:07.000+09:00",
                          *       "token": "Em94Vf961af8gSB2QtTVmGgn"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["Token"];
                     };
                 };
@@ -137,10 +141,12 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "expired_at": "2018-09-24T04:56:07.000+09:00",
                          *       "token": "Em94Vf961af8gSB2QtTVmGgn"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["Token"];
                     };
                 };
@@ -221,7 +227,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "number": "A0001",
                          *         "full_name": "徳川家康",
@@ -272,7 +279,8 @@ export interface paths {
                          *         "extra_breaks": [],
                          *         "paid_holiday_with_time_paid": 0.5
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["WorkOutput"][];
                     };
                 };
@@ -351,7 +359,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "user_id": 2,
                          *         "number": "A0001",
@@ -409,7 +418,8 @@ export interface paths {
                          *         "extra_breaks": [],
                          *         "paid_holiday_with_time_paid": 0.5
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["WorkOutput"][];
                     };
                 };
@@ -493,7 +503,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "number": "A0001",
                          *         "full_name": "徳川家康",
@@ -507,7 +518,8 @@ export interface paths {
                          *         "start_at_diff": "00:05",
                          *         "end_at_diff": "00:10"
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["WorkOutputDiff"][];
                     };
                 };
@@ -586,7 +598,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "user_id": 2,
                          *         "number": "A0001",
@@ -601,7 +614,8 @@ export interface paths {
                          *         "start_at_diff": "00:05",
                          *         "end_at_diff": "00:10"
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["WorkOutputDiff"][];
                     };
                 };
@@ -690,7 +704,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "user_id": 2,
                          *         "number": "A0001",
@@ -708,7 +723,8 @@ export interface paths {
                          *         "holiday_time5": "",
                          *         "total_working_hours": "120:00"
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["WorkOutputMonthOriginalAggregate"][];
                     };
                 };
@@ -797,7 +813,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "user_id": 2,
                          *         "number": "A0001",
@@ -827,7 +844,8 @@ export interface paths {
                          *         "holiday_time5": "",
                          *         "total_working_hours": "8:00"
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["WorkOutputOriginalAggregate"][];
                     };
                 };
@@ -948,7 +966,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "number": "A0001",
                          *       "full_name": "徳川家康",
                          *       "month": "202009",
@@ -997,7 +1016,8 @@ export interface paths {
                          *       "midnight_statutory_holiday_work_time": 0,
                          *       "extra_breaks": [],
                          *       "paid_holiday_with_time_paid": 0.5
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["WorkOutput"];
                     };
                 };
@@ -1068,7 +1088,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "user_id": 2,
                          *       "number": "A0001",
                          *       "full_name": "徳川家康",
@@ -1083,7 +1104,8 @@ export interface paths {
                          *       "other_end_at": "18:10",
                          *       "start_at_diff": "00:05",
                          *       "end_at_diff": "00:10"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["WorkOtherSystem"];
                     };
                 };
@@ -1154,7 +1176,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "title": "出勤",
                          *         "display_title": "出勤",
@@ -1184,7 +1207,8 @@ export interface paths {
                          *         "notes": "備考",
                          *         "sequence": 1
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["Segment"][];
                     };
                 };
@@ -1257,7 +1281,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "number": "A0001",
                          *         "updated_at": "1616-04-17T00:00:00.000+09:00",
@@ -1278,7 +1303,8 @@ export interface paths {
                          *         "segment": "1,2,5,6",
                          *         "default_segment_id": 1
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["User"][];
                     };
                 };
@@ -1499,7 +1525,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 3,
                          *       "number": "A0001",
                          *       "last_name": "徳川",
@@ -1518,7 +1545,8 @@ export interface paths {
                          *       "department_id": 1,
                          *       "segment": "1,2,5,6",
                          *       "default_segment_id": 1
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["User"];
                     };
                 };
@@ -1605,7 +1633,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "user_id": 2,
                          *         "number": "A0001",
@@ -1696,7 +1725,8 @@ export interface paths {
                          *           "variable_period_over_statutory_work_time": "0:00"
                          *         }
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["WorkOutputMonth"][];
                     };
                 };
@@ -1783,7 +1813,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "user_id": 2,
                          *       "stamp_type": 2,
                          *       "created_at": "2020-10-28T09:00:00.000+09:00",
@@ -1793,7 +1824,8 @@ export interface paths {
                          *       "user_agent": "curl/7.54.0",
                          *       "lodgment_id": 1,
                          *       "stamp_lodgment_id": 1
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["StampLog"];
                     };
                 };
@@ -1870,7 +1902,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "user_id": 2,
                          *         "stamp_type": 2,
@@ -1882,7 +1915,8 @@ export interface paths {
                          *         "lodgment_id": 1,
                          *         "stamp_lodgment_id": 1
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["StampLog"][];
                     };
                 };
@@ -1966,7 +2000,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "user_id": 2,
                          *         "stamp_type": 2,
@@ -1978,7 +2013,8 @@ export interface paths {
                          *         "lodgment_id": 1,
                          *         "stamp_lodgment_id": 1
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["StampLog"][];
                     };
                 };
@@ -2056,7 +2092,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "name": "原宿",
                          *         "sequence": 1,
@@ -2074,7 +2111,8 @@ export interface paths {
                          *         "created_at": "2020-10-28T09:00:00.000+09:00",
                          *         "updated_at": "2020-10-28T09:00:00.000+09:00"
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["Lodgment"][];
                     };
                 };
@@ -2147,12 +2185,14 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "id": 1,
                          *         "name": "沖縄県"
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["Prefectural"][];
                     };
                 };
@@ -2225,13 +2265,15 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "id": 1,
                          *         "name": "営業部",
                          *         "sequence": 1
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["Department"][];
                     };
                 };
@@ -2304,13 +2346,15 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "id": 1,
                          *         "name": "一般社員",
                          *         "sequence": 1
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["Employment"][];
                     };
                 };
@@ -2383,13 +2427,15 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "id": 1,
                          *         "name": "一般社員",
                          *         "sequence": 1
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["PaidHoliday"][];
                     };
                 };
@@ -2476,7 +2522,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "user_id": 100,
                          *         "date": "2021-06-01",
@@ -2493,7 +2540,8 @@ export interface paths {
                          *         "remaining_days": 3,
                          *         "remaining_hours": 10
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["PaidHolidayHistory"][];
                     };
                 };
@@ -2576,7 +2624,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "business_partner_id": 1,
                          *         "user_id": 2,
@@ -2663,7 +2712,8 @@ export interface paths {
                          *         },
                          *         "user_approvers": []
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["DealContract"][];
                     };
                 };
@@ -2703,7 +2753,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 1,
                          *       "business_partner_id": 1,
                          *       "user_id": 2,
@@ -2788,7 +2839,8 @@ export interface paths {
                          *         "show_work_time": false,
                          *         "memo": "備考"
                          *       }
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["DealContract"];
                     };
                 };
@@ -2847,7 +2899,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 1,
                          *       "business_partner_id": 1,
                          *       "user_id": 2,
@@ -2900,7 +2953,8 @@ export interface paths {
                          *       "show_year_month": true,
                          *       "show_work_time": true,
                          *       "memo": "請求書メモ"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["DealContract"];
                     };
                 };
@@ -2941,7 +2995,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 1,
                          *       "business_partner_id": 1,
                          *       "user_id": 2,
@@ -2994,7 +3049,8 @@ export interface paths {
                          *       "show_year_month": true,
                          *       "show_work_time": true,
                          *       "memo": "請求書メモ"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["DealContract"];
                     };
                 };
@@ -3071,7 +3127,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "id": 1,
                          *         "last_name": null,
@@ -3211,7 +3268,8 @@ export interface paths {
                          *         "close_out": 0,
                          *         "notes": ""
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["BusinessPartner"][];
                     };
                 };
@@ -3251,7 +3309,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 1,
                          *       "last_name": null,
                          *       "first_name": null,
@@ -3389,7 +3448,8 @@ export interface paths {
                          *       "purchase_invoice_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分 仕入請求書を送付いたしますので\r\n以下よりログインし、内容のご確認・承認をお願いいたします。\r\n\r\n承認URL\r\n【承認URL】\r\n\r\nダウンロードURL\r\n【ダウンロードURL】\r\n",
                          *       "close_out": 0,
                          *       "notes": ""
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["BusinessPartner"];
                     };
                 };
@@ -3448,7 +3508,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 1,
                          *       "last_name": null,
                          *       "first_name": null,
@@ -3586,7 +3647,8 @@ export interface paths {
                          *       "purchase_invoice_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分 仕入請求書を送付いたしますので\r\n以下よりログインし、内容のご確認・承認をお願いいたします。\r\n\r\n承認URL\r\n【承認URL】\r\n\r\nダウンロードURL\r\n【ダウンロードURL】\r\n",
                          *       "close_out": 0,
                          *       "notes": ""
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["BusinessPartner"];
                     };
                 };
@@ -3627,7 +3689,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 1,
                          *       "last_name": null,
                          *       "first_name": null,
@@ -3766,7 +3829,8 @@ export interface paths {
                          *       "purchase_invoice_mail_body": "【会社名】\r\n【担当者名】 様\r\n\r\nお世話になっております。\r\n【指定月】分 仕入請求書を送付いたしますので\r\n以下よりログインし、内容のご確認・承認をお願いいたします。\r\n\r\n承認URL\r\n【承認URL】\r\n\r\nダウンロードURL\r\n【ダウンロードURL】\r\n",
                          *       "close_out": 0,
                          *       "notes": ""
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["BusinessPartner"];
                     };
                 };
@@ -3842,7 +3906,8 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example [
+                        /**
+                         * @example [
                          *       {
                          *         "id": 84,
                          *         "first_name": "名",
@@ -3851,7 +3916,8 @@ export interface paths {
                          *         "branch": "部門",
                          *         "appointment": "役職"
                          *       }
-                         *     ] */
+                         *     ]
+                         */
                         "application/json": components["schemas"]["BusinessPartnerUser"][];
                     };
                 };
@@ -3897,14 +3963,16 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 84,
                          *       "first_name": "名",
                          *       "last_name": "姓",
                          *       "email": "ieyasuapply@ieyasu.co.jp",
                          *       "branch": "部門",
                          *       "appointment": "役職"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["BusinessPartnerUser"];
                     };
                 };
@@ -3968,14 +4036,16 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 84,
                          *       "first_name": "名",
                          *       "last_name": "姓",
                          *       "email": "ieyasuapply@ieyasu.co.jp",
                          *       "branch": "部門",
                          *       "appointment": "役職"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["BusinessPartnerUser"];
                     };
                 };
@@ -4021,14 +4091,16 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example {
+                        /**
+                         * @example {
                          *       "id": 84,
                          *       "first_name": "名",
                          *       "last_name": "姓",
                          *       "email": "ieyasuapply@ieyasu.co.jp",
                          *       "branch": "部門",
                          *       "appointment": "役職"
-                         *     } */
+                         *     }
+                         */
                         "application/json": components["schemas"]["BusinessPartnerUser"];
                     };
                 };
@@ -4056,7 +4128,7 @@ export interface paths {
             cookie?: never;
         };
         /**
-         * 扶養控除申告書CSV出力
+         * 扶養控除申告書（今年）CSV出力
          * @description 指定された年度に基づいてCSVファイルを出力します。
          */
         get: {
@@ -4080,9 +4152,68 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example 年度,社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,生年月日,性別,非居住者区分,外国人区分,現住所_郵便番号,現住所_都道府県,現住所_市区町村,現住所_町名・番地,現住所_建物名・部屋番号,現住所_世帯主の氏名_姓,現住所_世帯主の氏名_名,現住所_世帯主との続柄,住民票住所_郵便番号,住民票住所_都道府県,住民票住所_市区町村,住民票住所_町名・番地,住民票住所_建物名・部屋番号,住民票住所_世帯主の氏名_姓,住民票住所_世帯主の氏名_名,住民票住所_世帯主との続柄,給与所得金額,給与所得以外の所得の合計金額,合計所得見積金額,勤労学生,学校名,入学年月日,今年から勤労学生に該当した場合_該当月日,今年から勤労学生に該当した場合_事由,障害者区分,手帳の種類と等級,手帳交付日,今年から障害者に該当した場合_該当月日,今年から障害者に該当した場合_事由,ひとり親・寡婦区分,今年からひとり親・寡婦に該当した場合_該当月日,今年からひとり親・寡婦に該当した場合_事由,従たる給与についての扶養控除等申告書の提出有無,住民税に関する事項_ひとり親・寡婦,配偶者の有無,配偶者_氏名_姓,配偶者_氏名_名,配偶者_カナ_セイ,配偶者_カナ_メイ,配偶者_生年月日,配偶者_同居区分,配偶者_居住地区分,配偶者_郵便番号,配偶者_都道府県,配偶者_市区町村,配偶者_町名・番地,配偶者_建物名・部屋番号,配偶者_Address Line 1,配偶者_Address Line 2,配偶者_City,配偶者_State_Province_Region,配偶者_ZIP_Postal _Code,配偶者_Country,配偶者_非居住者該当,配偶者_年間送金額,配偶者_合計所得見積金額,配偶者_障害者区分,配偶者_申告書障害者区分判定,配偶者_手帳の種類と等級,配偶者_手帳交付日,配偶者_今年から障害者に該当した場合_該当月日,配偶者_今年から障害者に該当した場合_事由,配偶者_今年から扶養に該当した場合_該当月日,配偶者_今年から扶養に該当した場合_事由,配偶者_死亡月日,配偶者_源泉控除対象配偶者区分,配偶者_老人控除配偶者,配偶者_住民税に関する事項_退職手当等,配偶者_住民税に関する事項_退職所得を除く所得見積金額,扶養親族1_氏名_姓,扶養親族1_氏名_名,扶養親族1_氏名_カナ_セイ,扶養親族1_氏名_カナ_メイ,扶養親族1_生年月日,扶養親族1_続柄,扶養親族1_同居区分,扶養親族1_居住地区分,扶養親族1_郵便番号,扶養親族1_都道府県,扶養親族1_市区町村,扶養親族1_町名・番地,扶養親族1_建物名・部屋番号,扶養親族1_Address Line 1,扶養親族1_Address Line 2,扶養親族1_City,扶養親族1_State_Province_Region,扶養親族1_ZIP_Postal _Code,扶養親族1_Country,扶養親族1_非居住者該当,扶養親族1_年間送金額,扶養親族1_非居住者理由_16歳以上30歳未満又は70歳以上,扶養親族1_非居住者理由_留学,扶養親族1_非居住者理由_障害者,扶養親族1_非居住者理由_38万円以上の支払,扶養親族1_合計所得見積金額,扶養親族1_障害者区分,扶養親族1_申告書障害者区分判定,扶養親族1_手帳の種類と等級,扶養親族1_手帳交付日,扶養親族1_今年から障害者に該当した場合_該当月日,扶養親族1_今年から障害者に該当した場合_事由,扶養親族1_今年から扶養に該当した場合_該当月日,扶養親族1_今年から扶養に該当した場合_事由,扶養親族1_死亡月日,扶養親族1_扶養区分,扶養親族1_住民税に関する事項_退職手当等,扶養親族1_住民税に関する事項_退職所得を除く所得見積金額,障害者、寡婦、ひとり親、勤労学生_一般の障害者_本人,障害者、寡婦、ひとり親、勤労学生_特別障害者_本人,障害者、寡婦、ひとり親、勤労学生_一般の障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_特別障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_一般の障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_特別障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_一般の障害者_扶養親族_人数,障害者、寡婦、ひとり親、勤労学生_特別障害者_扶養親族_人数,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_扶養親族_人数,他の所得者の扶養親族1_氏名_姓,他の所得者の扶養親族1_氏名_名,他の所得者の扶養親族1_氏名_カナ_セイ,他の所得者の扶養親族1_氏名_カナ_メイ,他の所得者の扶養親族1_生年月日,他の所得者の扶養親族1_続柄,他の所得者の扶養親族1_同居区分,他の所得者の扶養親族1_居住地区分,他の所得者の扶養親族1_郵便番号,他の所得者の扶養親族1_都道府県,他の所得者の扶養親族1_市区町村,他の所得者の扶養親族1_町名・番地,他の所得者の扶養親族1_建物名・部屋番号,他の所得者の扶養親族1_Address Line 1,他の所得者の扶養親族1_Address Line 2,他の所得者の扶養親族1_City,他の所得者の扶養親族1_State_Province_Region,他の所得者の扶養親族1_ZIP_Postal_Code,他の所得者の扶養親族1_Country,他の所得者の扶養親族1_合計所得見積金額,他の所得者の扶養親族1_障害者区分,他の所得者の扶養親族1_手帳の種類と等級,他の所得者の扶養親族1_手帳交付日,他の所得者の扶養親族1_今年から扶養に該当した場合_該当月日,他の所得者の扶養親族1_今年から扶養に該当した場合_事由,他の所得者の扶養親族1_死亡月日,控除を受ける他の所得者1_氏名_姓,控除を受ける他の所得者1_氏名_名,控除を受ける他の所得者1_続柄,控除を受ける他の所得者1_同居区分,控除を受ける他の所得者1_郵便番号,控除を受ける他の所得者1_都道府県,控除を受ける他の所得者1_市区町村,控除を受ける他の所得者1_町名・番地,控除を受ける他の所得者1_建物名・部屋番号,一般の扶養親族_合計人数,特定扶養親族_合計人数,老人扶養親族_合計人数,同居老人扶養親族_合計人数,年少扶養親族_16歳未満_合計人数,一般障害者_配偶者扶養親族の合計人数,特別障害者_配偶者扶養親族の合計人数,同居特別障害者_配偶者扶養親族の合計人数,非居住者親族_配偶者扶養親族の合計人数
+                        /**
+                         * @example 年度,社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,生年月日,性別,非居住者区分,外国人区分,現住所_郵便番号,現住所_都道府県,現住所_市区町村,現住所_町名・番地,現住所_建物名・部屋番号,現住所_世帯主の氏名_姓,現住所_世帯主の氏名_名,現住所_世帯主との続柄,住民票住所_郵便番号,住民票住所_都道府県,住民票住所_市区町村,住民票住所_町名・番地,住民票住所_建物名・部屋番号,住民票住所_世帯主の氏名_姓,住民票住所_世帯主の氏名_名,住民票住所_世帯主との続柄,給与所得金額,給与所得以外の所得の合計金額,合計所得見積金額,勤労学生,学校名,入学年月日,今年から勤労学生に該当した場合_該当月日,今年から勤労学生に該当した場合_事由,障害者区分,手帳の種類と等級,手帳交付日,今年から障害者に該当した場合_該当月日,今年から障害者に該当した場合_事由,ひとり親・寡婦区分,今年からひとり親・寡婦に該当した場合_該当月日,今年からひとり親・寡婦に該当した場合_事由,従たる給与についての扶養控除等申告書の提出有無,住民税に関する事項_ひとり親・寡婦,配偶者の有無,配偶者_氏名_姓,配偶者_氏名_名,配偶者_カナ_セイ,配偶者_カナ_メイ,配偶者_生年月日,配偶者_同居区分,配偶者_居住地区分,配偶者_郵便番号,配偶者_都道府県,配偶者_市区町村,配偶者_町名・番地,配偶者_建物名・部屋番号,配偶者_Address Line 1,配偶者_Address Line 2,配偶者_City,配偶者_State_Province_Region,配偶者_ZIP_Postal _Code,配偶者_Country,配偶者_非居住者該当,配偶者_年間送金額,配偶者_合計所得見積金額,配偶者_障害者区分,配偶者_申告書障害者区分判定,配偶者_手帳の種類と等級,配偶者_手帳交付日,配偶者_今年から障害者に該当した場合_該当月日,配偶者_今年から障害者に該当した場合_事由,配偶者_今年から扶養に該当した場合_該当月日,配偶者_今年から扶養に該当した場合_事由,配偶者_死亡月日,配偶者_源泉控除対象配偶者区分,配偶者_老人控除配偶者,配偶者_住民税に関する事項_退職手当等,配偶者_住民税に関する事項_退職所得を除く所得見積金額,扶養親族1_氏名_姓,扶養親族1_氏名_名,扶養親族1_氏名_カナ_セイ,扶養親族1_氏名_カナ_メイ,扶養親族1_生年月日,扶養親族1_続柄,扶養親族1_同居区分,扶養親族1_居住地区分,扶養親族1_郵便番号,扶養親族1_都道府県,扶養親族1_市区町村,扶養親族1_町名・番地,扶養親族1_建物名・部屋番号,扶養親族1_Address Line 1,扶養親族1_Address Line 2,扶養親族1_City,扶養親族1_State_Province_Region,扶養親族1_ZIP_Postal _Code,扶養親族1_Country,扶養親族1_非居住者該当,扶養親族1_年間送金額,扶養親族1_非居住者理由_16歳以上30歳未満又は70歳以上,扶養親族1_非居住者理由_留学,扶養親族1_非居住者理由_障害者,扶養親族1_非居住者理由_38万円以上の支払,扶養親族1_合計所得見積金額,扶養親族1_障害者区分,扶養親族1_申告書障害者区分判定,扶養親族1_手帳の種類と等級,扶養親族1_手帳交付日,扶養親族1_今年から障害者に該当した場合_該当月日,扶養親族1_今年から障害者に該当した場合_事由,扶養親族1_今年から扶養に該当した場合_該当月日,扶養親族1_今年から扶養に該当した場合_事由,扶養親族1_死亡月日,扶養親族1_扶養区分,扶養親族1_住民税に関する事項_退職手当等,扶養親族1_住民税に関する事項_退職所得を除く所得見積金額,障害者、寡婦、ひとり親、勤労学生_一般の障害者_本人,障害者、寡婦、ひとり親、勤労学生_特別障害者_本人,障害者、寡婦、ひとり親、勤労学生_一般の障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_特別障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_一般の障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_特別障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_一般の障害者_扶養親族_人数,障害者、寡婦、ひとり親、勤労学生_特別障害者_扶養親族_人数,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_扶養親族_人数,他の所得者の扶養親族1_氏名_姓,他の所得者の扶養親族1_氏名_名,他の所得者の扶養親族1_氏名_カナ_セイ,他の所得者の扶養親族1_氏名_カナ_メイ,他の所得者の扶養親族1_生年月日,他の所得者の扶養親族1_続柄,他の所得者の扶養親族1_同居区分,他の所得者の扶養親族1_居住地区分,他の所得者の扶養親族1_郵便番号,他の所得者の扶養親族1_都道府県,他の所得者の扶養親族1_市区町村,他の所得者の扶養親族1_町名・番地,他の所得者の扶養親族1_建物名・部屋番号,他の所得者の扶養親族1_Address Line 1,他の所得者の扶養親族1_Address Line 2,他の所得者の扶養親族1_City,他の所得者の扶養親族1_State_Province_Region,他の所得者の扶養親族1_ZIP_Postal_Code,他の所得者の扶養親族1_Country,他の所得者の扶養親族1_合計所得見積金額,他の所得者の扶養親族1_障害者区分,他の所得者の扶養親族1_手帳の種類と等級,他の所得者の扶養親族1_手帳交付日,他の所得者の扶養親族1_今年から扶養に該当した場合_該当月日,他の所得者の扶養親族1_今年から扶養に該当した場合_事由,他の所得者の扶養親族1_死亡月日,控除を受ける他の所得者1_氏名_姓,控除を受ける他の所得者1_氏名_名,控除を受ける他の所得者1_続柄,控除を受ける他の所得者1_同居区分,控除を受ける他の所得者1_郵便番号,控除を受ける他の所得者1_都道府県,控除を受ける他の所得者1_市区町村,控除を受ける他の所得者1_町名・番地,控除を受ける他の所得者1_建物名・部屋番号,一般の扶養親族_合計人数,特定扶養親族_合計人数,老人扶養親族_合計人数,同居老人扶養親族_合計人数,年少扶養親族_16歳未満_合計人数,一般障害者_配偶者扶養親族の合計人数,特別障害者_配偶者扶養親族の合計人数,同居特別障害者_配偶者扶養親族の合計人数,非居住者親族_配偶者扶養親族の合計人数
                          *     令和5年,A0001,山田,太郎,サンプル会社,対象,,山田,太郎,ヤマダ,タロウ,1990/07/25,男,該当しない,外国人,1670xx1,東京都,杉並区,高円寺,ビル名,山田,太郎,本人,1670xx1,東京都,杉並区,高円寺N丁目N番地N号,ビル名,山田,太郎,本人,9500000,0,9500000,対象外,,,,,該当しない,,,,,対象外,,,なし,対象外,あり,NAM,Wife,ナム,ワイフ,1996/04/05,同居,,,,,,,,,,,,,該当しない,,0,該当しない,,,,,,2024/01/01,結婚,,該当しない,該当しない,該当しない,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,0
-                         *      */
+                         */
+                        "text/csv": string;
+                    };
+                };
+                /** @description Unexpected Error */
+                default: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": components["schemas"]["Error"];
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/nnc/reports/{year}/fuyo_shinkoku_rainen_csv": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * 扶養控除申告書（来年）CSV出力
+         * @description 指定された年度に基づいてCSVファイルを出力します。
+         */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    /**
+                     * @description 年度
+                     * @example 2023
+                     */
+                    year: number;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description CSVファイル */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        /**
+                         * @example 年度,社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,来年の扶養控除等申告書提出区分,来年の扶養控除等申告対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,生年月日,性別,非居住者区分,外国人区分,現住所_郵便番号,現住所_都道府県,現住所_市区町村,現住所_町名・番地,現住所_建物名・部屋番号,現住所_世帯主の氏名_姓,現住所_世帯主の氏名_名,現住所_世帯主との続柄,住民票住所_郵便番号,住民票住所_都道府県,住民票住所_市区町村,住民票住所_町名・番地,住民票住所_建物名・部屋番号,住民票住所_世帯主の氏名_姓,住民票住所_世帯主の氏名_名,住民票住所_世帯主との続柄,給与所得金額,給与所得以外の所得の合計金額,合計所得見積金額,勤労学生,学校名,入学年月日,障害者区分,手帳の種類と等級,手帳交付日,ひとり親・寡婦区分,従たる給与についての扶養控除等申告書の提出有無,住民税に関する事項_ひとり親・寡婦,配偶者の有無,配偶者_氏名_姓,配偶者_氏名_名,配偶者_カナ_セイ,配偶者_カナ_メイ,配偶者_生年月日,配偶者_同居区分,配偶者_居住地区分,配偶者_郵便番号,配偶者_都道府県,配偶者_市区町村,配偶者_町名・番地,配偶者_建物名・部屋番号,配偶者_Address Line 1,配偶者_Address Line 2,配偶者_City,配偶者_State_Province_Region,配偶者_ZIP_Postal _Code,配偶者_Country,配偶者_非居住者該当,配偶者_年間送金額,配偶者_合計所得見積金額,配偶者_障害者区分,配偶者_申告書障害者区分判定,配偶者_手帳の種類と等級,配偶者_手帳交付日,配偶者_源泉控除対象配偶者区分,配偶者_老人控除配偶者,配偶者_住民税に関する事項_退職手当等,配偶者_住民税に関する事項_退職所得を除く所得見積金額,扶養親族1_氏名_姓,扶養親族1_氏名_名,扶養親族1_氏名_カナ_セイ,扶養親族1_氏名_カナ_メイ,扶養親族1_生年月日,扶養親族1_続柄,扶養親族1_同居区分,扶養親族1_居住地区分,扶養親族1_郵便番号,扶養親族1_都道府県,扶養親族1_市区町村,扶養親族1_町名・番地,扶養親族1_建物名・部屋番号,扶養親族1_Address Line 1,扶養親族1_Address Line 2,扶養親族1_City,扶養親族1_State_Province_Region,扶養親族1_ZIP_Postal _Code,扶養親族1_Country,扶養親族1_非居住者該当,扶養親族1_年間送金額,扶養親族1_非居住者理由_16歳以上30歳未満又は70歳以上,扶養親族1_非居住者理由_留学,扶養親族1_非居住者理由_障害者,扶養親族1_非居住者理由_38万円以上の支払,扶養親族1_合計所得見積金額,扶養親族1_障害者区分,扶養親族1_申告書障害者区分判定,扶養親族1_手帳の種類と等級,扶養親族1_手帳交付日,扶養親族1_扶養区分,扶養親族1_住民税に関する事項_退職手当等,扶養親族1_住民税に関する事項_退職所得を除く所得見積金額,障害者、寡婦、ひとり親、勤労学生_一般の障害者_本人,障害者、寡婦、ひとり親、勤労学生_特別障害者_本人,障害者、寡婦、ひとり親、勤労学生_一般の障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_特別障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_同一生計配偶者,障害者、寡婦、ひとり親、勤労学生_一般の障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_特別障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_扶養親族,障害者、寡婦、ひとり親、勤労学生_一般の障害者_扶養親族_人数,障害者、寡婦、ひとり親、勤労学生_特別障害者_扶養親族_人数,障害者、寡婦、ひとり親、勤労学生_同居特別障害者_扶養親族_人数,他の所得者の扶養親族1_氏名_姓,他の所得者の扶養親族1_氏名_名,他の所得者の扶養親族1_氏名_カナ_セイ,他の所得者の扶養親族1_氏名_カナ_メイ,他の所得者の扶養親族1_生年月日,他の所得者の扶養親族1_続柄,他の所得者の扶養親族1_同居区分,他の所得者の扶養親族1_居住地区分,他の所得者の扶養親族1_郵便番号,他の所得者の扶養親族1_都道府県,他の所得者の扶養親族1_市区町村,他の所得者の扶養親族1_町名・番地,他の所得者の扶養親族1_建物名・部屋番号,他の所得者の扶養親族1_Address Line 1,他の所得者の扶養親族1_Address Line 2,他の所得者の扶養親族1_City,他の所得者の扶養親族1_State_Province_Region,他の所得者の扶養親族1_ZIP_Postal_Code,他の所得者の扶養親族1_Country,他の所得者の扶養親族1_合計所得見積金額,他の所得者の扶養親族1_障害者区分,他の所得者の扶養親族1_手帳の種類と等級,他の所得者の扶養親族1_手帳交付日,控除を受ける他の所得者1_氏名_姓,控除を受ける他の所得者1_氏名_名,控除を受ける他の所得者1_続柄,控除を受ける他の所得者1_同居区分,控除を受ける他の所得者1_郵便番号,控除を受ける他の所得者1_都道府県,控除を受ける他の所得者1_市区町村,控除を受ける他の所得者1_町名・番地,控除を受ける他の所得者1_建物名・部屋番号,一般の扶養親族_合計人数,特定扶養親族_合計人数,老人扶養親族_合計人数,同居老人扶養親族_合計人数,年少扶養親族_16歳未満_合計人数,一般障害者_配偶者扶養親族の合計人数,特別障害者_配偶者扶養親族の合計人数,同居特別障害者_配偶者扶養親族の合計人数,非居住者親族_配偶者扶養親族の合計人数
+                         *     令和7年,foo,年調,太郎,,対象外,,年調,太郎,シケン,タロウ,1980/01/01,男,該当しない,日本人,,,,,,,,,,,,,,,,,0,0,0,対象外,,,該当しない,,,対象外,なし,,なし,,,,,,,,,,,,,,,,,,,,,,,,,,該当しない,該当しない,該当しない,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,該当しない,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,0
+                         */
                         "text/csv": string;
                     };
                 };
@@ -4137,9 +4268,10 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,一般の生命保険_生命保険の新契約支払金額合計_A,一般の生命保険_生命保険の旧契約支払金額合計_B,一般の生命保険_生命保険の控除額_イ,介護医療_支払金額合計_C,介護医療_介護医療の控除額_ロ,個人年金_新契約支払金額合計_D,個人年金_旧契約支払金額合計_E,個人年金_個人年金の控除額_ハ,生命保険料控除額合計_イ＋ロ＋ハ,地震保険_地震保険の保険料合計_B,地震保険_旧長期損害保険料合計_C,地震保険_地震保険の控除額合計,社会保険_国民年金保険料等の合計金額,社会保険_社会保険の控除額合計,小規模企業共済_小規模企業共済等掛金控除額合計
+                        /**
+                         * @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,一般の生命保険_生命保険の新契約支払金額合計_A,一般の生命保険_生命保険の旧契約支払金額合計_B,一般の生命保険_生命保険の控除額_イ,介護医療_支払金額合計_C,介護医療_介護医療の控除額_ロ,個人年金_新契約支払金額合計_D,個人年金_旧契約支払金額合計_E,個人年金_個人年金の控除額_ハ,生命保険料控除額合計_イ＋ロ＋ハ,地震保険_地震保険の保険料合計_B,地震保険_旧長期損害保険料合計_C,地震保険_地震保険の控除額合計,社会保険_国民年金保険料等の合計金額,社会保険_社会保険の控除額合計,小規模企業共済_小規模企業共済等掛金控除額合計
                          *     A0001,山田,太郎,サンプル会社,対象,,山田,太郎,ヤマダ,タロウ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-                         *      */
+                         */
                         "text/csv": string;
                     };
                 };
@@ -4194,9 +4326,10 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,基礎控除申告有無,配偶者控除申告有無,所得金額調整控除申告書有無,本人の給与収入,本人の給与所得,本人の給与以外の所得額,本人の合計所得見積額,本人の所得見積り額_区分I,本人定額減税対象,基礎控除の額,配偶者控除区分,配偶者_氏名_姓,配偶者_氏名_名,配偶者_カナ_セイ,配偶者_カナ_メイ,配偶者_生年月日,配偶者_同居区分,配偶者_居住地区分,配偶者_郵便番号,配偶者_都道府県,配偶者_市区町村,配偶者_町名・番地,配偶者_建物名・部屋番号,配偶者_Address Line 1,配偶者_Address Line 2,配偶者_City,配偶者_State_Province_Region,配偶者_ZIP_Postal_Code,配偶者_Country,配偶者_非居住者該当,配偶者_年間送金額,配偶者_給与収入,配偶者_給与所得,配偶者_給与所得以外の所得,配偶者_合計所得見積額,配偶者_所得見積額区分_区分II,配偶者控除の額,配偶者特別控除の額,配偶者定額減税対象,所得金額調整控除_当社の給与のみで850万円をこえている,所得金額調整控除_申告条件,所得金額調整控除_同一生計配偶者又は扶養親族の氏名,所得金額調整控除_同一生計配偶者又は扶養親族の氏名_カナ,所得金額調整控除_同一生計配偶者又は扶養親族と住所が異なる場合の住所,所得金額調整控除_同一生計配偶者又は扶養親族の生年月日,所得金額調整控除_同一生計配偶者又は扶養親族のあなたとの続柄,所得金額調整控除_同一生計配偶者又は扶養親族の合計所得見積額,所得金額調整控除_特別障害者_特別障害者に該当する事実,所得金額調整控除_特別障害者_扶養控除申告書のとおり
+                        /**
+                         * @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,基礎控除申告有無,配偶者控除申告有無,所得金額調整控除申告書有無,本人の給与収入,本人の給与所得,本人の給与以外の所得額,本人の合計所得見積額,本人の所得見積り額_区分I,本人定額減税対象,基礎控除の額,配偶者控除区分,配偶者_氏名_姓,配偶者_氏名_名,配偶者_カナ_セイ,配偶者_カナ_メイ,配偶者_生年月日,配偶者_同居区分,配偶者_居住地区分,配偶者_郵便番号,配偶者_都道府県,配偶者_市区町村,配偶者_町名・番地,配偶者_建物名・部屋番号,配偶者_Address Line 1,配偶者_Address Line 2,配偶者_City,配偶者_State_Province_Region,配偶者_ZIP_Postal_Code,配偶者_Country,配偶者_非居住者該当,配偶者_年間送金額,配偶者_給与収入,配偶者_給与所得,配偶者_給与所得以外の所得,配偶者_合計所得見積額,配偶者_所得見積額区分_区分II,配偶者控除の額,配偶者特別控除の額,配偶者定額減税対象,所得金額調整控除_当社の給与のみで850万円をこえている,所得金額調整控除_申告条件,所得金額調整控除_同一生計配偶者又は扶養親族の氏名,所得金額調整控除_同一生計配偶者又は扶養親族の氏名_カナ,所得金額調整控除_同一生計配偶者又は扶養親族と住所が異なる場合の住所,所得金額調整控除_同一生計配偶者又は扶養親族の生年月日,所得金額調整控除_同一生計配偶者又は扶養親族のあなたとの続柄,所得金額調整控除_同一生計配偶者又は扶養親族の合計所得見積額,所得金額調整控除_特別障害者_特別障害者に該当する事実,所得金額調整控除_特別障害者_扶養控除申告書のとおり
                          *     A0001,山田,太郎,サンプル会社,対象,,山田,太郎,ヤマダ,タロウ,あり,あり,なし,11450000,9500000,0,9500000,B,480000,配偶者控除対象,もうり,らん,モウリ,ラン,1996/04/05,同居,,,,,,,,,,,,,該当しない,,100000,0,0,0,2,260000,,,,,,該当する,,,,,,,,,
-                         *      */
+                         */
                         "text/csv": string;
                     };
                 };
@@ -4251,9 +4384,10 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,住宅借入金等特別控除額,住宅借入金等特別控除適用数,居住開始年月日1,住宅借入金等特別控除区分1,住宅借入金等特別控除区分_特定1,住宅借入金等年末残高1
+                        /**
+                         * @example 社員番号,社員氏名_姓,社員氏名_名,給与支払者_名称,年末調整対象区分,年末調整対象外理由,戸籍上の氏名_姓,戸籍上の氏名_名,戸籍上の氏名_カナ_セイ,戸籍上の氏名_カナ_メイ,住宅借入金等特別控除額,住宅借入金等特別控除適用数,居住開始年月日1,住宅借入金等特別控除区分1,住宅借入金等特別控除区分_特定1,住宅借入金等年末残高1
                          *     A0001,山田,太郎,サンプル会社,対象,,山田,太郎,ヤマダ,タロウ,,N回,2022年02月01日,N回目,,対象外,,
-                         *      */
+                         */
                         "text/csv": string;
                     };
                 };
@@ -4308,9 +4442,10 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        /** @example 社員番号,給与支払者_名称,給与支払事務所コード,姓,名,源泉徴収票の提出状況1,会社名1,所在地_住所_1,退職年月日1,総支給額_課税分_1,所得税1,社会保険料1,社会保険料の内_小規模企業共済等掛金_1
+                        /**
+                         * @example 社員番号,給与支払者_名称,給与支払事務所コード,姓,名,源泉徴収票の提出状況1,会社名1,所在地_住所_1,退職年月日1,総支給額_課税分_1,所得税1,社会保険料1,社会保険料の内_小規模企業共済等掛金_1
                          *     A0001,CompanyName,2011001058413,山田,太郎,会社に提出済み,サンプル会社,渋谷区,2022-04-01,,100000,,
-                         *      */
+                         */
                         "text/csv": string;
                     };
                 };
@@ -6423,8 +6558,7 @@ export interface components {
     };
     requestBodies: never;
     headers: {
-        /** @description ページネーションでのリンクが記載されます。リンクのフォーマットは [RFC 5988](https://tools.ietf.org/html/rfc5988#section-5)を参照ください next, previous, last, firstが設定されます。
-         *      */
+        /** @description ページネーションでのリンクが記載されます。リンクのフォーマットは [RFC 5988](https://tools.ietf.org/html/rfc5988#section-5)を参照ください next, previous, last, firstが設定されます。 */
         Link: string;
         /** @description クエリ対象のデータの全件数 */
         "X-Total-Count": number;

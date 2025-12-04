@@ -3,7 +3,6 @@ import originalCreateClient, {
 	type Client,
 	type Middleware,
 } from "openapi-fetch";
-import type { Tagged } from "type-fest";
 import type { components, paths } from "./lib/api/v1";
 
 export type IeyasuClient = Client<paths>;
@@ -21,9 +20,11 @@ export function createIeyasuClient(
 	return client;
 }
 
-type SecretKey = Tagged<"SecretKey", string>;
-type CompanyName = Tagged<"CompanyName", string>;
-type BaseUrl = Tagged<"BaseUrl", string>;
+type Tagged<T, K> = T & { __brand: K };
+
+type SecretKey = Tagged<string, "SecretKey">;
+type CompanyName = Tagged<string, "CompanyName">;
+type BaseUrl = Tagged<string, "BaseUrl">;
 
 type TokenResponse = components["schemas"]["Token"];
 
