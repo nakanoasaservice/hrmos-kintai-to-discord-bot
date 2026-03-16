@@ -11,8 +11,7 @@ HRMOS勤怠の勤怠打刻情報を自動的にDiscordに通知するCloudflare 
 
 ### 前提条件
 
-- [Node.js](https://nodejs.org/)
-- [pnpm](https://pnpm.io/)
+- [Bun](https://bun.sh/)
 - [Cloudflare](https://www.cloudflare.com/)アカウント
 - HRMOSアカウント（API利用可能なもの）
 - DiscordのWebhook URL
@@ -25,7 +24,7 @@ git clone https://github.com/nakanoasaservice/hrmos-kintai-to-discord-bot.git
 cd hrmos-kintai-to-discord-bot
 
 # 依存関係をインストール
-pnpm install
+bun install
 ```
 
 ### 設定
@@ -56,10 +55,10 @@ wrangler secret put DISCORD_WEBHOOK_URL
 
 ```bash
 # 開発環境で実行
-pnpm run dev
+bun run dev
 
 # 本番環境にデプロイ
-pnpm run deploy
+bun run deploy
 ```
 
 ## 使用技術
