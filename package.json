@@ -2,6 +2,22 @@
 	"name": "hrmos-kintai-to-discord-bot",
 	"version": "0.0.0",
 	"private": true,
+	"cloudflare": {
+		"bindings": {
+			"HRMOS_COMPANY_NAME": {
+				"description": "HRMOSで設定している会社名。API認証に使用されます。"
+			},
+			"AUTH_TOKENS": {
+				"description": "HRMOS APIの認証トークンを保存するKVネームスペース。デプロイ時に自動プロビジョニングされます。"
+			},
+			"HRMOS_SECRET_KEY": {
+				"description": "HRMOSのシークレットキー。[HRMOS管理画面](https://ieyasu.co/)のAPI設定から取得してください。"
+			},
+			"DISCORD_WEBHOOK_URL": {
+				"description": "勤怠通知を送信するDiscordチャンネルのWebhook URL。チャンネル設定 → 連携サービス → Webhook から作成できます。"
+			}
+		}
+	},
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
