@@ -4,6 +4,7 @@ import originalCreateClient, {
 	type Middleware,
 } from "openapi-fetch";
 import * as v from "valibot";
+
 import type { components, paths } from "./lib/api/v1";
 
 export type IeyasuClient = Client<paths>;

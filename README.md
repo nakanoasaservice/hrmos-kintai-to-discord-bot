@@ -29,16 +29,21 @@ bun install
 
 ### 設定
 
-1. `wrangler.toml`ファイルを編集してください：
+1. `wrangler.jsonc`ファイルを編集してください：
 
-```toml
-# 会社名を設定（HRMOSでの会社名）
-HRMOS_COMPANY_NAME = "<YOUR_COMPANY_NAME>"
+```jsonc
+// 会社名を設定（HRMOSでの会社名）
+"vars": {
+  "HRMOS_COMPANY_NAME": "<YOUR_COMPANY_NAME>"
+}
 
-# KVネームスペースIDを設定
-[[kv_namespaces]]
-binding = "AUTH_TOKENS"
-id = "<YOUR_KV_ID>"
+// KVネームスペースIDを設定
+"kv_namespaces": [
+  {
+    "binding": "AUTH_TOKENS",
+    "id": "<YOUR_KV_ID>"
+  }
+]
 ```
 
 2. シークレットを設定：
