@@ -30,17 +30,17 @@
 	},
 	"dependencies": {
 		"@date-fns/tz": "^1.5.0",
-		"date-fns": "^4.3.0",
+		"date-fns": "^4.4.0",
 		"openapi-fetch": "^0.17.0",
 		"valibot": "1.4.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.15",
-		"@cloudflare/vitest-pool-workers": "^0.16.9",
-		"discord-api-types": "^0.38.47",
+		"@biomejs/biome": "^2.4.16",
+		"@cloudflare/vitest-pool-workers": "^0.16.10",
+		"discord-api-types": "^0.38.48",
 		"openapi-typescript": "^7.13.0",
 		"typescript": "^5.9.3",
 		"vitest": "^4.1.7",
-		"wrangler": "^4.94.0"
+		"wrangler": "^4.95.0"
 	}
 }
