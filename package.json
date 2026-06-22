@@ -36,11 +36,11 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.0",
-		"@cloudflare/vitest-pool-workers": "^0.16.15",
-		"discord-api-types": "^0.38.48",
+		"@cloudflare/vitest-pool-workers": "^0.16.18",
+		"discord-api-types": "^0.38.49",
 		"openapi-typescript": "^7.13.0",
 		"typescript": "^5.9.3",
-		"vitest": "^4.1.8",
-		"wrangler": "^4.100.0"
+		"vitest": "^4.1.9",
+		"wrangler": "^4.103.0"
 	}
 }
