@@ -32,15 +32,15 @@
 		"@date-fns/tz": "^1.5.0",
 		"date-fns": "^4.4.0",
 		"openapi-fetch": "^0.17.0",
-		"valibot": "1.4.1"
+		"valibot": "1.4.2"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.5.0",
-		"@cloudflare/vitest-pool-workers": "^0.16.18",
+		"@biomejs/biome": "^2.5.1",
+		"@cloudflare/vitest-pool-workers": "^0.16.20",
 		"discord-api-types": "^0.38.49",
 		"openapi-typescript": "^7.13.0",
 		"typescript": "^5.9.3",
 		"vitest": "^4.1.9",
-		"wrangler": "^4.103.0"
+		"wrangler": "^4.105.0"
 	}
 }
