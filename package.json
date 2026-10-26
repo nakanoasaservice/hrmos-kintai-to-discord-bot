@@ -35,12 +35,12 @@
 		"valibot": "1.5.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.5.15",
+		"@biomejs/biome": "^2.6.2",
 		"@cloudflare/vitest-pool-workers": "^0.23.0",
-		"discord-api-types": "^0.38.56",
+		"discord-api-types": "^0.38.57",
 		"openapi-typescript": "^7.13.0",
 		"typescript": "^5.9.3",
 		"vitest": "^4.1.12",
-		"wrangler": "^4.151.0"
+		"wrangler": "^4.152.0"
 	}
 }
