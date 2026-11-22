@@ -11,7 +11,7 @@ HRMOS勤怠の勤怠打刻情報を自動的にDiscordに通知するCloudflare 
 
 ### 前提条件
 
-- [Bun](https://bun.sh/)
+- [Node.js](https://nodejs.org/) 24.22.1 and [pnpm](https://pnpm.io/) 12.21.0
 - [Cloudflare](https://www.cloudflare.com/)アカウント
 - HRMOSアカウント（API利用可能なもの）
 - DiscordのWebhook URL
