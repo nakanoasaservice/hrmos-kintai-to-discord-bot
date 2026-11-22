@@ -24,7 +24,7 @@ git clone https://github.com/nakanoasaservice/hrmos-kintai-to-discord-bot.git
 cd hrmos-kintai-to-discord-bot
 
 # 依存関係をインストール
-bun install
+pnpm install
 ```
 
 ### 設定
@@ -60,10 +60,10 @@ wrangler secret put DISCORD_WEBHOOK_URL
 
 ```bash
 # 開発環境で実行
-bun run dev
+pnpm run dev
 
 # 本番環境にデプロイ
-bun run deploy
+pnpm run deploy
 ```
 
 ## 使用技術
@@ -77,3 +77,15 @@ bun run deploy
 ## ライセンス
 
 MIT ライセンス (詳細は[LICENSE](LICENSE)ファイルを参照してください)
+
+## Development toolchain
+
+Use Node.js 24 and the pnpm version pinned in `package.json`.
+Run `pnpm install --frozen-lockfile`, `pnpm check`, `pnpm test`, and `pnpm build`.
+Vite+ provides formatting, linting, type checks and tests. Tests run locally
+in the Cloudflare Workers runtime. The build task bundles with Wrangler in
+dry-run mode; it does not deploy. Use `pnpm dev` for local development.
+
+Update Vite+ and its bundled tools together with `vp migrate`, then update the
+pinned `setup-vp` version in CI and refresh the pnpm lockfile. Run the project's
+checks before committing toolchain updates.

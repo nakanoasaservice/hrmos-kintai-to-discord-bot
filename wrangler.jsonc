@@ -9,7 +9,7 @@
 	// Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
 	// Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
 	"observability": {
-		"enabled": true
+		"enabled": true,
 	},
 
 	// Automatically place your workloads in an optimal location to minimize latency.
@@ -17,7 +17,7 @@
 	// rather than the end user may result in better performance.
 	// Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
 	"placement": {
-		"mode": "smart"
+		"mode": "smart",
 	},
 
 	// Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
@@ -26,7 +26,7 @@
 	// Note: Use secrets to store sensitive data.
 	// - https://developers.cloudflare.com/workers/configuration/secrets/
 	"vars": {
-		"HRMOS_COMPANY_NAME": "<YOUR_COMPANY_NAME>"
+		"HRMOS_COMPANY_NAME": "<YOUR_COMPANY_NAME>",
 	},
 
 	// Bind a KV Namespace. Use KV as persistent storage for small key-value pairs.
@@ -34,12 +34,12 @@
 	"kv_namespaces": [
 		{
 			"binding": "AUTH_TOKENS",
-			"id": "<YOUR_KV_ID>"
-		}
+			"id": "<YOUR_KV_ID>",
+		},
 	],
 
 	"triggers": {
 		// every 5 minutes
-		"crons": ["*/5 * * * *"]
-	}
+		"crons": ["*/5 * * * *"],
+	},
 }

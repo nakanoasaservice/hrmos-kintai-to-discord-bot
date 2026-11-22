@@ -1,9 +1,9 @@
 {
 	"extensions.ignoreRecommendations": true,
-	"editor.defaultFormatter": "biomejs.biome",
+	"editor.defaultFormatter": "oxc.oxc-vscode",
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
-		"source.fixAll.biome": "explicit",
+		"source.fixAll.oxc": "explicit",
 		"source.organizeImports.biome": "explicit"
 	},
 	"files.associations": {
