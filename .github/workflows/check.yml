@@ -1,25 +1,21 @@
 name: Check
-
 on:
   pull_request:
-
 permissions:
   contents: read
-
 jobs:
   check:
-    name: Biome Check
+    name: Check
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+      - uses: voidzero-dev/setup-vp@v1.22.0
+        with:
+          cache: true
+      - name: Verify declared Node.js runtime
+        run: node -e 'const expected = require("./package.json").devEngines.runtime.version; if (process.versions.node !== expected) throw new Error(`Expected Node ${expected}, got ${process.version}`)'
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-
-      - name: Install Dependencies
-        run: bun install --frozen-lockfile
-
-      - name: Run Biome Check
-        run: bun run check
+      - run: pnpm check
+      - run: pnpm test
+      - run: pnpm build
+      - run: git diff --exit-code

@@ -2,6 +2,41 @@
 	"name": "hrmos-kintai-to-discord-bot",
 	"version": "0.0.0",
 	"private": true,
+	"type": "module",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vp test run",
+		"cf-typegen": "wrangler types",
+		"typegen": "openapi-typescript 'https://ieyasu.co/docs/openapi.json' -o src/lib/api/v1.d.ts",
+		"check": "vp check",
+		"check:fix": "vp check --fix",
+		"build": "vp run build:worker",
+		"build:worker": "wrangler deploy --dry-run --outdir dist"
+	},
+	"dependencies": {
+		"@date-fns/tz": "^1.5.0",
+		"date-fns": "^4.4.0",
+		"openapi-fetch": "^0.17.0",
+		"valibot": "1.5.0"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-plugin": "^1.8.4",
+		"discord-api-types": "^0.38.56",
+		"openapi-typescript": "^7.13.0",
+		"typescript": "^5.9.3",
+		"vite-plus": "catalog:",
+		"vitest": "catalog:",
+		"wrangler": "^4.151.0"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": "24.22.1"
+		}
+	},
+	"packageManager": "pnpm@12.21.0",
 	"cloudflare": {
 		"bindings": {
 			"HRMOS_COMPANY_NAME": {
@@ -17,30 +52,5 @@
 				"description": "勤怠通知を送信するDiscordチャンネルのWebhook URL。チャンネル設定 → 連携サービス → Webhook から作成できます。"
 			}
 		}
-	},
-	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"start": "wrangler dev",
-		"test": "vitest",
-		"cf-typegen": "wrangler types",
-		"typegen": "openapi-typescript 'https://ieyasu.co/docs/openapi.json' -o src/lib/api/v1.d.ts",
-		"check": "biome check",
-		"check:fix": "biome check --write"
-	},
-	"dependencies": {
-		"@date-fns/tz": "^1.5.0",
-		"date-fns": "^4.4.0",
-		"openapi-fetch": "^0.17.0",
-		"valibot": "1.5.0"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.5.15",
-		"@cloudflare/vitest-pool-workers": "^0.23.0",
-		"discord-api-types": "^0.38.56",
-		"openapi-typescript": "^7.13.0",
-		"typescript": "^5.9.3",
-		"vitest": "^4.1.12",
-		"wrangler": "^4.151.0"
 	}
 }

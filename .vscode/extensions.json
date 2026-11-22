@@ -1,7 +1,7 @@
 {
 	"recommendations": [
 		"streetsidesoftware.code-spell-checker",
-		"biomejs.biome",
+		"oxc.oxc-vscode",
 		"tamasfe.even-better-toml",
 		"editorconfig.editorconfig"
 	]
